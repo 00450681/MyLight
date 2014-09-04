@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="control_array">
+        <item>远程控制</item>
+        <item>接近开关</item>
+        <item>晃动开关</item>
+        <item>定时器</item>
+        <item>指纹识别</item>
+        <item>视网膜识别</item>
+        <item>人脸识别</item>
+        <item>声音识别</item>
+    </string-array>
+</resources>

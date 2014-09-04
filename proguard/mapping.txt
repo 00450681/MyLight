@@ -1,0 +1,2512 @@
+android.support.v4.app.ActivityCompatHoneycomb -> android.support.v4.app.a:
+    void invalidateOptionsMenu(android.app.Activity) -> a
+android.support.v4.app.BackStackRecord -> android.support.v4.app.b:
+    android.support.v4.app.FragmentManagerImpl mManager -> a
+    android.support.v4.app.BackStackRecord$Op mHead -> b
+    android.support.v4.app.BackStackRecord$Op mTail -> c
+    int mNumOp -> d
+    int mEnterAnim -> e
+    int mExitAnim -> f
+    int mPopEnterAnim -> g
+    int mPopExitAnim -> h
+    int mTransition -> i
+    int mTransitionStyle -> j
+    boolean mAddToBackStack -> k
+    boolean mAllowAddToBackStack -> l
+    java.lang.String mName -> m
+    boolean mCommitted -> n
+    int mIndex -> o
+    int mBreadCrumbTitleRes -> p
+    java.lang.CharSequence mBreadCrumbTitleText -> q
+    int mBreadCrumbShortTitleRes -> r
+    java.lang.CharSequence mBreadCrumbShortTitleText -> s
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void dump(java.lang.String,java.io.PrintWriter,boolean) -> a
+    void addOp(android.support.v4.app.BackStackRecord$Op) -> a
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
+    void doAddOp(int,android.support.v4.app.Fragment,java.lang.String,int) -> a
+    android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment) -> b
+    void bumpBackStackNesting(int) -> a
+    int commit() -> a
+    int commitInternal(boolean) -> a
+    void run() -> run
+    void popFromBackStack(boolean) -> b
+    java.lang.String getName() -> b
+android.support.v4.app.BackStackRecord$Op -> android.support.v4.app.c:
+    android.support.v4.app.BackStackRecord$Op next -> a
+    android.support.v4.app.BackStackRecord$Op prev -> b
+    int cmd -> c
+    android.support.v4.app.Fragment fragment -> d
+    int enterAnim -> e
+    int exitAnim -> f
+    int popEnterAnim -> g
+    int popExitAnim -> h
+    java.util.ArrayList removed -> i
+android.support.v4.app.BackStackState -> android.support.v4.app.BackStackState:
+    int[] mOps -> a
+    int mTransition -> b
+    int mTransitionStyle -> c
+    java.lang.String mName -> d
+    int mIndex -> e
+    int mBreadCrumbTitleRes -> f
+    java.lang.CharSequence mBreadCrumbTitleText -> g
+    int mBreadCrumbShortTitleRes -> h
+    java.lang.CharSequence mBreadCrumbShortTitleText -> i
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.BackStackRecord instantiate(android.support.v4.app.FragmentManagerImpl) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.BackStackState$1 -> android.support.v4.app.d:
+    android.support.v4.app.BackStackState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.BackStackState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.Fragment -> android.support.v4.app.Fragment:
+    java.util.HashMap sClassMap -> P
+    int mState -> a
+    android.view.View mAnimatingAway -> b
+    int mStateAfterAnimating -> c
+    android.os.Bundle mSavedFragmentState -> d
+    android.util.SparseArray mSavedViewState -> e
+    int mIndex -> f
+    java.lang.String mWho -> g
+    android.os.Bundle mArguments -> h
+    android.support.v4.app.Fragment mTarget -> i
+    int mTargetIndex -> j
+    int mTargetRequestCode -> k
+    boolean mAdded -> l
+    boolean mRemoving -> m
+    boolean mResumed -> n
+    boolean mFromLayout -> o
+    boolean mInLayout -> p
+    boolean mRestored -> q
+    int mBackStackNesting -> r
+    android.support.v4.app.FragmentManagerImpl mFragmentManager -> s
+    android.support.v4.app.FragmentActivity mActivity -> t
+    android.support.v4.app.FragmentManagerImpl mChildFragmentManager -> u
+    android.support.v4.app.Fragment mParentFragment -> v
+    int mFragmentId -> w
+    int mContainerId -> x
+    java.lang.String mTag -> y
+    boolean mHidden -> z
+    boolean mDetached -> A
+    boolean mRetainInstance -> B
+    boolean mRetaining -> C
+    boolean mHasMenu -> D
+    boolean mMenuVisible -> E
+    boolean mCalled -> F
+    int mNextAnim -> G
+    android.view.ViewGroup mContainer -> H
+    android.view.View mView -> I
+    android.view.View mInnerView -> J
+    boolean mDeferStart -> K
+    boolean mUserVisibleHint -> L
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> M
+    boolean mLoadersStarted -> N
+    boolean mCheckedForLoaderManager -> O
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String) -> a
+    android.support.v4.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle) -> a
+    void restoreViewState(android.os.Bundle) -> a
+    void setIndex(int,android.support.v4.app.Fragment) -> a
+    boolean isInBackStack() -> a
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    android.support.v4.app.FragmentActivity getActivity() -> b
+    android.content.res.Resources getResources() -> c
+    boolean isDetached() -> d
+    void onHiddenChanged(boolean) -> a
+    void onActivityResult(int,int,android.content.Intent) -> a
+    android.view.LayoutInflater getLayoutInflater(android.os.Bundle) -> b
+    void onInflate(android.app.Activity,android.util.AttributeSet,android.os.Bundle) -> a
+    void onAttach(android.app.Activity) -> a
+    android.view.animation.Animation onCreateAnimation(int,boolean,int) -> a
+    void onCreate(android.os.Bundle) -> c
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> a
+    void onViewCreated(android.view.View,android.os.Bundle) -> a
+    void onActivityCreated(android.os.Bundle) -> d
+    void onViewStateRestored(android.os.Bundle) -> e
+    void onStart() -> e
+    void onResume() -> f
+    void onSaveInstanceState(android.os.Bundle) -> f
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onPause() -> g
+    void onStop() -> h
+    void onLowMemory() -> onLowMemory
+    void onDestroyView() -> i
+    void onDestroy() -> j
+    void initState() -> k
+    void onDetach() -> l
+    void onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    void onPrepareOptionsMenu(android.view.Menu) -> a
+    void onDestroyOptionsMenu() -> m
+    boolean onOptionsItemSelected(android.view.MenuItem) -> a
+    void onOptionsMenuClosed(android.view.Menu) -> b
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> b
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    void instantiateChildFragmentManager() -> n
+    void performCreate(android.os.Bundle) -> g
+    android.view.View performCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> b
+    void performActivityCreated(android.os.Bundle) -> h
+    void performStart() -> o
+    void performResume() -> p
+    void performConfigurationChanged(android.content.res.Configuration) -> a
+    void performLowMemory() -> q
+    boolean performCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> b
+    boolean performPrepareOptionsMenu(android.view.Menu) -> c
+    boolean performOptionsItemSelected(android.view.MenuItem) -> c
+    boolean performContextItemSelected(android.view.MenuItem) -> d
+    void performOptionsMenuClosed(android.view.Menu) -> d
+    void performSaveInstanceState(android.os.Bundle) -> i
+    void performPause() -> r
+    void performStop() -> s
+    void performReallyStop() -> t
+    void performDestroyView() -> u
+    void performDestroy() -> v
+android.support.v4.app.Fragment$1 -> android.support.v4.app.e:
+    android.support.v4.app.Fragment this$0 -> a
+    android.view.View findViewById(int) -> a
+android.support.v4.app.Fragment$InstantiationException -> android.support.v4.app.f:
+android.support.v4.app.Fragment$SavedState -> android.support.v4.app.Fragment$SavedState:
+    android.os.Bundle mState -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.Fragment$SavedState$1 -> android.support.v4.app.g:
+    android.support.v4.app.Fragment$SavedState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.Fragment$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentActivity -> android.support.v4.app.h:
+    android.os.Handler mHandler -> a
+    android.support.v4.app.FragmentManagerImpl mFragments -> b
+    android.support.v4.app.FragmentContainer mContainer -> c
+    boolean mCreated -> d
+    boolean mResumed -> e
+    boolean mStopped -> f
+    boolean mReallyStopped -> g
+    boolean mRetaining -> h
+    boolean mOptionsMenuInvalidated -> i
+    boolean mCheckedForLoaderManager -> j
+    boolean mLoadersStarted -> k
+    java.util.HashMap mAllLoaderManagers -> l
+    android.support.v4.app.LoaderManagerImpl mLoaderManager -> m
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onBackPressed() -> onBackPressed
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreatePanelMenu(int,android.view.Menu) -> onCreatePanelMenu
+    android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet) -> onCreateView
+    void onDestroy() -> onDestroy
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    void onLowMemory() -> onLowMemory
+    boolean onMenuItemSelected(int,android.view.MenuItem) -> onMenuItemSelected
+    void onPanelClosed(int,android.view.Menu) -> onPanelClosed
+    void onPause() -> onPause
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onResume() -> onResume
+    void onPostResume() -> onPostResume
+    void onResumeFragments() -> a
+    boolean onPreparePanel(int,android.view.View,android.view.Menu) -> onPreparePanel
+    java.lang.Object onRetainNonConfigurationInstance() -> onRetainNonConfigurationInstance
+    void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    void onStart() -> onStart
+    void onStop() -> onStop
+    java.lang.Object onRetainCustomNonConfigurationInstance() -> b
+    void supportInvalidateOptionsMenu() -> c
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> dump
+    java.lang.String viewToString(android.view.View) -> a
+    void dumpViewHierarchy(java.lang.String,java.io.PrintWriter,android.view.View) -> a
+    void doReallyStop(boolean) -> a
+    void onReallyStop() -> d
+    void onAttachFragment(android.support.v4.app.Fragment) -> a
+    void startActivityForResult(android.content.Intent,int) -> startActivityForResult
+    void invalidateSupportFragment(java.lang.String) -> a
+    android.support.v4.app.LoaderManagerImpl getLoaderManager(java.lang.String,boolean,boolean) -> a
+android.support.v4.app.FragmentActivity$FragmentTag -> android.support.v4.app.i:
+    int[] Fragment -> a
+android.support.v4.app.FragmentActivity$NonConfigurationInstances -> android.support.v4.app.j:
+    java.lang.Object activity -> a
+    java.lang.Object custom -> b
+    java.util.HashMap children -> c
+    java.util.ArrayList fragments -> d
+    java.util.HashMap loaders -> e
+android.support.v4.app.FragmentContainer -> android.support.v4.app.k:
+    android.view.View findViewById(int) -> a
+android.support.v4.app.FragmentManager -> android.support.v4.app.l:
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean executePendingTransactions() -> b
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+android.support.v4.app.FragmentManager$OnBackStackChangedListener -> android.support.v4.app.m:
+    void onBackStackChanged() -> a
+android.support.v4.app.FragmentManagerImpl -> android.support.v4.app.n:
+    boolean DEBUG -> a
+    boolean HONEYCOMB -> b
+    java.util.ArrayList mPendingActions -> c
+    java.lang.Runnable[] mTmpActions -> d
+    boolean mExecutingActions -> e
+    java.util.ArrayList mActive -> f
+    java.util.ArrayList mAdded -> g
+    java.util.ArrayList mAvailIndices -> h
+    java.util.ArrayList mBackStack -> i
+    java.util.ArrayList mCreatedMenus -> j
+    java.util.ArrayList mBackStackIndices -> k
+    java.util.ArrayList mAvailBackStackIndices -> l
+    java.util.ArrayList mBackStackChangeListeners -> m
+    int mCurState -> n
+    android.support.v4.app.FragmentActivity mActivity -> o
+    android.support.v4.app.FragmentContainer mContainer -> p
+    android.support.v4.app.Fragment mParent -> q
+    boolean mNeedMenuInvalidate -> r
+    boolean mStateSaved -> s
+    boolean mDestroyed -> t
+    java.lang.String mNoTransactionsBecause -> u
+    boolean mHavePendingDeferredStart -> v
+    android.os.Bundle mStateBundle -> w
+    android.util.SparseArray mStateArray -> x
+    java.lang.Runnable mExecCommit -> y
+    android.view.animation.Interpolator DECELERATE_QUINT -> z
+    android.view.animation.Interpolator DECELERATE_CUBIC -> A
+    android.view.animation.Interpolator ACCELERATE_QUINT -> B
+    android.view.animation.Interpolator ACCELERATE_CUBIC -> C
+    void throwException(java.lang.RuntimeException) -> a
+    android.support.v4.app.FragmentTransaction beginTransaction() -> a
+    boolean executePendingTransactions() -> b
+    boolean popBackStackImmediate() -> c
+    void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    android.view.animation.Animation makeOpenCloseAnimation(android.content.Context,float,float,float,float) -> a
+    android.view.animation.Animation makeFadeAnimation(android.content.Context,float,float) -> a
+    android.view.animation.Animation loadAnimation(android.support.v4.app.Fragment,int,boolean,int) -> a
+    void performPendingDeferredStart(android.support.v4.app.Fragment) -> a
+    void moveToState(android.support.v4.app.Fragment,int,int,int,boolean) -> a
+    void moveToState(android.support.v4.app.Fragment) -> b
+    void moveToState(int,boolean) -> a
+    void moveToState(int,int,int,boolean) -> a
+    void startPendingDeferredFragments() -> d
+    void makeActive(android.support.v4.app.Fragment) -> c
+    void makeInactive(android.support.v4.app.Fragment) -> d
+    void addFragment(android.support.v4.app.Fragment,boolean) -> a
+    void removeFragment(android.support.v4.app.Fragment,int,int) -> a
+    void hideFragment(android.support.v4.app.Fragment,int,int) -> b
+    void showFragment(android.support.v4.app.Fragment,int,int) -> c
+    void detachFragment(android.support.v4.app.Fragment,int,int) -> d
+    void attachFragment(android.support.v4.app.Fragment,int,int) -> e
+    android.support.v4.app.Fragment findFragmentById(int) -> a
+    android.support.v4.app.Fragment findFragmentByTag(java.lang.String) -> a
+    void checkStateLoss() -> t
+    void enqueueAction(java.lang.Runnable,boolean) -> a
+    int allocBackStackIndex(android.support.v4.app.BackStackRecord) -> a
+    void setBackStackIndex(int,android.support.v4.app.BackStackRecord) -> a
+    void freeBackStackIndex(int) -> b
+    boolean execPendingActions() -> e
+    void reportBackStackChanged() -> f
+    void addBackStackState(android.support.v4.app.BackStackRecord) -> b
+    boolean popBackStackState(android.os.Handler,java.lang.String,int,int) -> a
+    java.util.ArrayList retainNonConfig() -> g
+    void saveFragmentViewState(android.support.v4.app.Fragment) -> e
+    android.os.Bundle saveFragmentBasicState(android.support.v4.app.Fragment) -> f
+    android.os.Parcelable saveAllState() -> h
+    void restoreAllState(android.os.Parcelable,java.util.ArrayList) -> a
+    void attachActivity(android.support.v4.app.FragmentActivity,android.support.v4.app.FragmentContainer,android.support.v4.app.Fragment) -> a
+    void noteStateNotSaved() -> i
+    void dispatchCreate() -> j
+    void dispatchActivityCreated() -> k
+    void dispatchStart() -> l
+    void dispatchResume() -> m
+    void dispatchPause() -> n
+    void dispatchStop() -> o
+    void dispatchReallyStop() -> p
+    void dispatchDestroyView() -> q
+    void dispatchDestroy() -> r
+    void dispatchConfigurationChanged(android.content.res.Configuration) -> a
+    void dispatchLowMemory() -> s
+    boolean dispatchCreateOptionsMenu(android.view.Menu,android.view.MenuInflater) -> a
+    boolean dispatchPrepareOptionsMenu(android.view.Menu) -> a
+    boolean dispatchOptionsItemSelected(android.view.MenuItem) -> a
+    boolean dispatchContextItemSelected(android.view.MenuItem) -> b
+    void dispatchOptionsMenuClosed(android.view.Menu) -> b
+    int reverseTransit(int) -> c
+    int transitToStyleIndex(int,boolean) -> b
+android.support.v4.app.FragmentManagerImpl$1 -> android.support.v4.app.o:
+    android.support.v4.app.FragmentManagerImpl this$0 -> a
+    void run() -> run
+android.support.v4.app.FragmentManagerImpl$5 -> android.support.v4.app.p:
+    android.support.v4.app.Fragment val$fragment -> a
+    android.support.v4.app.FragmentManagerImpl this$0 -> b
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+android.support.v4.app.FragmentManagerState -> android.support.v4.app.FragmentManagerState:
+    android.support.v4.app.FragmentState[] mActive -> a
+    int[] mAdded -> b
+    android.support.v4.app.BackStackState[] mBackStack -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentManagerState$1 -> android.support.v4.app.q:
+    android.support.v4.app.FragmentManagerState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentManagerState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentState -> android.support.v4.app.FragmentState:
+    java.lang.String mClassName -> a
+    int mIndex -> b
+    boolean mFromLayout -> c
+    int mFragmentId -> d
+    int mContainerId -> e
+    java.lang.String mTag -> f
+    boolean mRetainInstance -> g
+    boolean mDetached -> h
+    android.os.Bundle mArguments -> i
+    android.os.Bundle mSavedFragmentState -> j
+    android.support.v4.app.Fragment mInstance -> k
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    android.support.v4.app.Fragment instantiate(android.support.v4.app.FragmentActivity,android.support.v4.app.Fragment) -> a
+    int describeContents() -> describeContents
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+android.support.v4.app.FragmentState$1 -> android.support.v4.app.r:
+    android.support.v4.app.FragmentState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTabHost -> android.support.v4.app.FragmentTabHost:
+    java.util.ArrayList mTabs -> a
+    android.content.Context mContext -> b
+    android.support.v4.app.FragmentManager mFragmentManager -> c
+    int mContainerId -> d
+    android.widget.TabHost$OnTabChangeListener mOnTabChangeListener -> e
+    android.support.v4.app.FragmentTabHost$TabInfo mLastTab -> f
+    boolean mAttached -> g
+    void setup() -> setup
+    void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener) -> setOnTabChangedListener
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void onTabChanged(java.lang.String) -> onTabChanged
+    android.support.v4.app.FragmentTransaction doTabChanged(java.lang.String,android.support.v4.app.FragmentTransaction) -> a
+android.support.v4.app.FragmentTabHost$1 -> android.support.v4.app.s:
+android.support.v4.app.FragmentTabHost$SavedState -> android.support.v4.app.FragmentTabHost$SavedState:
+    java.lang.String curTab -> a
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    java.lang.String toString() -> toString
+android.support.v4.app.FragmentTabHost$SavedState$1 -> android.support.v4.app.t:
+    android.support.v4.app.FragmentTabHost$SavedState createFromParcel(android.os.Parcel) -> a
+    android.support.v4.app.FragmentTabHost$SavedState[] newArray(int) -> a
+    java.lang.Object[] newArray(int) -> newArray
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+android.support.v4.app.FragmentTabHost$TabInfo -> android.support.v4.app.u:
+    java.lang.String tag -> a
+    java.lang.Class clss -> b
+    android.os.Bundle args -> c
+    android.support.v4.app.Fragment fragment -> d
+    android.support.v4.app.Fragment access$102(android.support.v4.app.FragmentTabHost$TabInfo,android.support.v4.app.Fragment) -> a
+    android.support.v4.app.Fragment access$100(android.support.v4.app.FragmentTabHost$TabInfo) -> a
+    java.lang.String access$200(android.support.v4.app.FragmentTabHost$TabInfo) -> b
+    java.lang.Class access$300(android.support.v4.app.FragmentTabHost$TabInfo) -> c
+    android.os.Bundle access$400(android.support.v4.app.FragmentTabHost$TabInfo) -> d
+android.support.v4.app.FragmentTransaction -> android.support.v4.app.v:
+    android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String) -> a
+    android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment) -> a
+    android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment) -> b
+    int commit() -> a
+android.support.v4.app.LoaderManager -> android.support.v4.app.w:
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManager$LoaderCallbacks -> android.support.v4.app.x:
+    android.support.v4.content.Loader onCreateLoader(int,android.os.Bundle) -> a
+    void onLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    void onLoaderReset(android.support.v4.content.Loader) -> a
+android.support.v4.app.LoaderManagerImpl -> android.support.v4.app.y:
+    boolean DEBUG -> a
+    android.support.v4.util.SparseArrayCompat mLoaders -> b
+    android.support.v4.util.SparseArrayCompat mInactiveLoaders -> c
+    java.lang.String mWho -> d
+    android.support.v4.app.FragmentActivity mActivity -> e
+    boolean mStarted -> f
+    boolean mRetaining -> g
+    void updateActivity(android.support.v4.app.FragmentActivity) -> a
+    void doStart() -> b
+    void doStop() -> c
+    void doRetain() -> d
+    void finishRetain() -> e
+    void doReportNextStart() -> f
+    void doReportStart() -> g
+    void doDestroy() -> h
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+    boolean hasRunningLoaders() -> a
+android.support.v4.app.LoaderManagerImpl$LoaderInfo -> android.support.v4.app.z:
+    int mId -> a
+    android.os.Bundle mArgs -> b
+    android.support.v4.app.LoaderManager$LoaderCallbacks mCallbacks -> c
+    android.support.v4.content.Loader mLoader -> d
+    boolean mHaveData -> e
+    boolean mDeliveredData -> f
+    java.lang.Object mData -> g
+    boolean mStarted -> h
+    boolean mRetaining -> i
+    boolean mRetainingStarted -> j
+    boolean mReportNextStart -> k
+    boolean mDestroyed -> l
+    boolean mListenerRegistered -> m
+    android.support.v4.app.LoaderManagerImpl$LoaderInfo mPendingLoader -> n
+    android.support.v4.app.LoaderManagerImpl this$0 -> o
+    void start() -> a
+    void retain() -> b
+    void finishRetain() -> c
+    void reportStart() -> d
+    void stop() -> e
+    void destroy() -> f
+    void callOnLoadFinished(android.support.v4.content.Loader,java.lang.Object) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.app.NoSaveStateFrameLayout -> android.support.v4.app.aa:
+    android.view.ViewGroup wrap(android.view.View) -> a
+    void dispatchSaveInstanceState(android.util.SparseArray) -> dispatchSaveInstanceState
+    void dispatchRestoreInstanceState(android.util.SparseArray) -> dispatchRestoreInstanceState
+android.support.v4.app.SuperNotCalledException -> android.support.v4.app.ab:
+android.support.v4.content.Loader -> android.support.v4.a.a:
+    int mId -> a
+    android.support.v4.content.Loader$OnLoadCompleteListener mListener -> b
+    boolean mStarted -> c
+    boolean mAbandoned -> d
+    boolean mReset -> e
+    boolean mContentChanged -> f
+    void registerListener(int,android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void unregisterListener(android.support.v4.content.Loader$OnLoadCompleteListener) -> a
+    void startLoading() -> a
+    void onStartLoading() -> b
+    void stopLoading() -> c
+    void onStopLoading() -> d
+    void reset() -> e
+    void onReset() -> f
+    java.lang.String dataToString(java.lang.Object) -> a
+    java.lang.String toString() -> toString
+    void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
+android.support.v4.content.Loader$OnLoadCompleteListener -> android.support.v4.a.b:
+android.support.v4.os.ParcelableCompat -> android.support.v4.b.a:
+    android.os.Parcelable$Creator newCreator(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.os.ParcelableCompat$CompatCreator -> android.support.v4.b.b:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorCallbacks -> android.support.v4.b.c:
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+    java.lang.Object[] newArray(int) -> a
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2 -> android.support.v4.b.d:
+    android.support.v4.os.ParcelableCompatCreatorCallbacks mCallbacks -> a
+    java.lang.Object createFromParcel(android.os.Parcel) -> createFromParcel
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> createFromParcel
+    java.lang.Object[] newArray(int) -> newArray
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub -> android.support.v4.b.e:
+    android.os.Parcelable$Creator instantiate(android.support.v4.os.ParcelableCompatCreatorCallbacks) -> a
+android.support.v4.util.DebugUtils -> android.support.v4.c.a:
+    void buildShortClassTag(java.lang.Object,java.lang.StringBuilder) -> a
+android.support.v4.util.LogWriter -> android.support.v4.c.b:
+    java.lang.String mTag -> a
+    java.lang.StringBuilder mBuilder -> b
+    void close() -> close
+    void flush() -> flush
+    void write(char[],int,int) -> write
+    void flushBuilder() -> a
+android.support.v4.util.SparseArrayCompat -> android.support.v4.c.c:
+    java.lang.Object DELETED -> a
+    boolean mGarbage -> b
+    int[] mKeys -> c
+    java.lang.Object[] mValues -> d
+    int mSize -> e
+    void gc() -> c
+    int size() -> a
+    int keyAt(int) -> a
+    java.lang.Object valueAt(int) -> b
+    void clear() -> b
+    int idealByteArraySize(int) -> c
+    int idealIntArraySize(int) -> d
+android.support.v4.view.KeyEventCompat -> android.support.v4.view.a:
+    android.support.v4.view.KeyEventCompat$KeyEventVersionImpl IMPL -> a
+    boolean hasModifiers(android.view.KeyEvent,int) -> a
+    boolean hasNoModifiers(android.view.KeyEvent) -> a
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl -> android.support.v4.view.b:
+    int metaStateFilterDirectionalModifiers(int,int,int,int,int) -> a
+    int normalizeMetaState(int) -> a
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl -> android.support.v4.view.c:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl -> android.support.v4.view.d:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> b
+android.support.v4.view.KeyEventCompatHoneycomb -> android.support.v4.view.e:
+    boolean metaStateHasModifiers(int,int) -> a
+    boolean metaStateHasNoModifiers(int) -> a
+android.support.v4.view.MotionEventCompat -> android.support.v4.view.f:
+    android.support.v4.view.MotionEventCompat$MotionEventVersionImpl IMPL -> a
+    int getActionIndex(android.view.MotionEvent) -> a
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$BaseMotionEventVersionImpl -> android.support.v4.view.g:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl -> android.support.v4.view.h:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompat$MotionEventVersionImpl -> android.support.v4.view.i:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.MotionEventCompatEclair -> android.support.v4.view.j:
+    int findPointerIndex(android.view.MotionEvent,int) -> a
+    int getPointerId(android.view.MotionEvent,int) -> b
+    float getX(android.view.MotionEvent,int) -> c
+    float getY(android.view.MotionEvent,int) -> d
+android.support.v4.view.PagerAdapter -> android.support.v4.view.k:
+    android.database.DataSetObservable mObservable -> a
+    int getCount() -> a
+    void startUpdate(android.view.ViewGroup) -> a
+    java.lang.Object instantiateItem(android.view.ViewGroup,int) -> a
+    void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> a
+    void setPrimaryItem(android.view.ViewGroup,int,java.lang.Object) -> b
+    void finishUpdate(android.view.ViewGroup) -> b
+    void startUpdate(android.view.View) -> a
+    java.lang.Object instantiateItem(android.view.View,int) -> a
+    void destroyItem(android.view.View,int,java.lang.Object) -> a
+    void setPrimaryItem(android.view.View,int,java.lang.Object) -> b
+    void finishUpdate(android.view.View) -> b
+    boolean isViewFromObject(android.view.View,java.lang.Object) -> a
+    android.os.Parcelable saveState() -> b
+    void restoreState(android.os.Parcelable,java.lang.ClassLoader) -> a
+    int getItemPosition(java.lang.Object) -> a
+    void registerDataSetObserver(android.database.DataSetObserver) -> a
+    void unregisterDataSetObserver(android.database.DataSetObserver) -> b
+    float getPageWidth(int) -> a
+android.support.v4.view.VelocityTrackerCompat -> android.support.v4.view.l:
+    android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl IMPL -> a
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl -> android.support.v4.view.m:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl -> android.support.v4.view.n:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl -> android.support.v4.view.o:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.VelocityTrackerCompatHoneycomb -> android.support.v4.view.p:
+    float getXVelocity(android.view.VelocityTracker,int) -> a
+android.support.v4.view.ViewCompat -> android.support.v4.view.q:
+    android.support.v4.view.ViewCompat$ViewCompatImpl IMPL -> a
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+android.support.v4.view.ViewCompat$BaseViewCompatImpl -> android.support.v4.view.r:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    long getFrameTime() -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+android.support.v4.view.ViewCompat$GBViewCompatImpl -> android.support.v4.view.s:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompat$HCViewCompatImpl -> android.support.v4.view.t:
+    long getFrameTime() -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+android.support.v4.view.ViewCompat$ICSViewCompatImpl -> android.support.v4.view.u:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+android.support.v4.view.ViewCompat$JBViewCompatImpl -> android.support.v4.view.v:
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+android.support.v4.view.ViewCompat$JbMr1ViewCompatImpl -> android.support.v4.view.w:
+android.support.v4.view.ViewCompat$ViewCompatImpl -> android.support.v4.view.x:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+    int getOverScrollMode(android.view.View) -> a
+    void postInvalidateOnAnimation(android.view.View) -> b
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+android.support.v4.view.ViewCompatGingerbread -> android.support.v4.view.y:
+    int getOverScrollMode(android.view.View) -> a
+android.support.v4.view.ViewCompatHC -> android.support.v4.view.z:
+    long getFrameTime() -> a
+    void setLayerType(android.view.View,int,android.graphics.Paint) -> a
+android.support.v4.view.ViewCompatICS -> android.support.v4.view.aa:
+    boolean canScrollHorizontally(android.view.View,int) -> a
+android.support.v4.view.ViewCompatJB -> android.support.v4.view.ab:
+    void postInvalidateOnAnimation(android.view.View) -> a
+    void postOnAnimation(android.view.View,java.lang.Runnable) -> a
+android.support.v4.view.ViewPager -> android.support.v4.view.ViewPager:
+    int[] LAYOUT_ATTRS -> a
+    java.util.Comparator COMPARATOR -> b
+    android.view.animation.Interpolator sInterpolator -> c
+    java.util.ArrayList mItems -> d
+    android.support.v4.view.ViewPager$ItemInfo mTempItem -> e
+    android.graphics.Rect mTempRect -> f
+    android.support.v4.view.PagerAdapter mAdapter -> g
+    int mCurItem -> h
+    int mRestoredCurItem -> i
+    android.os.Parcelable mRestoredAdapterState -> j
+    java.lang.ClassLoader mRestoredClassLoader -> k
+    android.widget.Scroller mScroller -> l
+    android.support.v4.view.ViewPager$PagerObserver mObserver -> m
+    int mPageMargin -> n
+    android.graphics.drawable.Drawable mMarginDrawable -> o
+    int mTopPageBounds -> p
+    int mBottomPageBounds -> q
+    float mFirstOffset -> r
+    float mLastOffset -> s
+    int mChildWidthMeasureSpec -> t
+    int mChildHeightMeasureSpec -> u
+    boolean mInLayout -> v
+    boolean mScrollingCacheEnabled -> w
+    boolean mPopulatePending -> x
+    int mOffscreenPageLimit -> y
+    boolean mIsBeingDragged -> z
+    boolean mIsUnableToDrag -> A
+    int mDefaultGutterSize -> B
+    int mGutterSize -> C
+    int mTouchSlop -> D
+    float mLastMotionX -> E
+    float mLastMotionY -> F
+    float mInitialMotionX -> G
+    float mInitialMotionY -> H
+    int mActivePointerId -> I
+    android.view.VelocityTracker mVelocityTracker -> J
+    int mMinimumVelocity -> K
+    int mMaximumVelocity -> L
+    int mFlingDistance -> M
+    int mCloseEnough -> N
+    boolean mFakeDragging -> O
+    android.support.v4.widget.EdgeEffectCompat mLeftEdge -> P
+    android.support.v4.widget.EdgeEffectCompat mRightEdge -> Q
+    boolean mFirstLayout -> R
+    boolean mNeedCalculatePageOffsets -> S
+    boolean mCalledSuper -> T
+    int mDecorChildCount -> U
+    android.support.v4.view.ViewPager$OnPageChangeListener mOnPageChangeListener -> V
+    android.support.v4.view.ViewPager$OnPageChangeListener mInternalPageChangeListener -> W
+    android.support.v4.view.ViewPager$OnAdapterChangeListener mAdapterChangeListener -> Z
+    android.support.v4.view.ViewPager$PageTransformer mPageTransformer -> aa
+    java.lang.reflect.Method mSetChildrenDrawingOrderEnabled -> ab
+    int mDrawingOrder -> ac
+    java.util.ArrayList mDrawingOrderedChildren -> ad
+    android.support.v4.view.ViewPager$ViewPositionComparator sPositionComparator -> ae
+    java.lang.Runnable mEndScrollRunnable -> af
+    int mScrollState -> ag
+    void onDetachedFromWindow() -> onDetachedFromWindow
+    void setScrollState(int) -> setScrollState
+    void setAdapter(android.support.v4.view.PagerAdapter) -> setAdapter
+    void removeNonDecorViews() -> f
+    android.support.v4.view.PagerAdapter getAdapter() -> getAdapter
+    void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener) -> setOnAdapterChangeListener
+    void setCurrentItem(int) -> setCurrentItem
+    void setCurrentItem(int,boolean) -> a
+    int getCurrentItem() -> getCurrentItem
+    void setCurrentItemInternal(int,boolean,boolean) -> a
+    void setCurrentItemInternal(int,boolean,boolean,int) -> a
+    void scrollToItem(int,boolean,int,boolean) -> a
+    void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener) -> setOnPageChangeListener
+    void setChildrenDrawingOrderEnabledCompat(boolean) -> setChildrenDrawingOrderEnabledCompat
+    int getChildDrawingOrder(int,int) -> getChildDrawingOrder
+    int getOffscreenPageLimit() -> getOffscreenPageLimit
+    void setOffscreenPageLimit(int) -> setOffscreenPageLimit
+    void setPageMargin(int) -> setPageMargin
+    int getPageMargin() -> getPageMargin
+    void setPageMarginDrawable(android.graphics.drawable.Drawable) -> setPageMarginDrawable
+    void setPageMarginDrawable(int) -> setPageMarginDrawable
+    boolean verifyDrawable(android.graphics.drawable.Drawable) -> verifyDrawable
+    void drawableStateChanged() -> drawableStateChanged
+    float distanceInfluenceForSnapDuration(float) -> a
+    void smoothScrollTo(int,int,int) -> a
+    android.support.v4.view.ViewPager$ItemInfo addNewItem(int,int) -> a
+    void dataSetChanged() -> a
+    void populate() -> b
+    void populate(int) -> a
+    void calculatePageOffsets(android.support.v4.view.ViewPager$ItemInfo,int,android.support.v4.view.ViewPager$ItemInfo) -> a
+    android.os.Parcelable onSaveInstanceState() -> onSaveInstanceState
+    void onRestoreInstanceState(android.os.Parcelable) -> onRestoreInstanceState
+    void addView(android.view.View,int,android.view.ViewGroup$LayoutParams) -> addView
+    void removeView(android.view.View) -> removeView
+    android.support.v4.view.ViewPager$ItemInfo infoForChild(android.view.View) -> a
+    android.support.v4.view.ViewPager$ItemInfo infoForAnyChild(android.view.View) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForPosition(int) -> b
+    void onAttachedToWindow() -> onAttachedToWindow
+    void onMeasure(int,int) -> onMeasure
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void recomputeScrollPosition(int,int,int,int) -> a
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void computeScroll() -> computeScroll
+    boolean pageScrolled(int) -> d
+    void onPageScrolled(int,float,int) -> a
+    void completeScroll(boolean) -> a
+    boolean isGutterDrag(float,float) -> a
+    void enableLayers(boolean) -> b
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    boolean performDrag(float) -> b
+    android.support.v4.view.ViewPager$ItemInfo infoForCurrentScrollPosition() -> g
+    int determineTargetPage(int,float,int,int) -> a
+    void draw(android.graphics.Canvas) -> draw
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void onSecondaryPointerUp(android.view.MotionEvent) -> a
+    void endDrag() -> h
+    void setScrollingCacheEnabled(boolean) -> setScrollingCacheEnabled
+    boolean canScroll(android.view.View,boolean,int,int,int) -> a
+    boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    boolean executeKeyEvent(android.view.KeyEvent) -> a
+    boolean arrowScroll(int) -> c
+    android.graphics.Rect getChildRectInPagerCoordinates(android.graphics.Rect,android.view.View) -> a
+    boolean pageLeft() -> c
+    boolean pageRight() -> d
+    void addFocusables(java.util.ArrayList,int,int) -> addFocusables
+    void addTouchables(java.util.ArrayList) -> addTouchables
+    boolean onRequestFocusInDescendants(int,android.graphics.Rect) -> onRequestFocusInDescendants
+    boolean dispatchPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent) -> dispatchPopulateAccessibilityEvent
+    android.view.ViewGroup$LayoutParams generateDefaultLayoutParams() -> generateDefaultLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams) -> generateLayoutParams
+    boolean checkLayoutParams(android.view.ViewGroup$LayoutParams) -> checkLayoutParams
+    android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet) -> generateLayoutParams
+    int[] access$400() -> e
+android.support.v4.view.ViewPager$1 -> android.support.v4.view.ac:
+    int compare(android.support.v4.view.ViewPager$ItemInfo,android.support.v4.view.ViewPager$ItemInfo) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+android.support.v4.view.ViewPager$2 -> android.support.v4.view.ad:
+    float getInterpolation(float) -> getInterpolation
+android.support.v4.view.ViewPager$Decor -> android.support.v4.view.ae:
+android.support.v4.view.ViewPager$ItemInfo -> android.support.v4.view.af:
+    java.lang.Object object -> a
+    int position -> b
+    boolean scrolling -> c
+    float widthFactor -> d
+    float offset -> e
+android.support.v4.view.ViewPager$LayoutParams -> android.support.v4.view.ag:
+    boolean isDecor -> a
+    int gravity -> b
+    float widthFactor -> c
+    boolean needsMeasure -> d
+    int position -> e
+    int childIndex -> f
+android.support.v4.view.ViewPager$OnAdapterChangeListener -> android.support.v4.view.ah:
+    void onAdapterChanged(android.support.v4.view.PagerAdapter,android.support.v4.view.PagerAdapter) -> a
+android.support.v4.view.ViewPager$OnPageChangeListener -> android.support.v4.view.ai:
+    void onPageScrolled(int,float,int) -> a
+    void onPageSelected(int) -> a
+    void onPageScrollStateChanged(int) -> b
+android.support.v4.view.ViewPager$PageTransformer -> android.support.v4.view.aj:
+    void transformPage(android.view.View,float) -> a
+android.support.v4.view.ViewPager$PagerObserver -> android.support.v4.view.ak:
+    android.support.v4.view.ViewPager this$0 -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+android.support.v4.view.ViewPager$SavedState -> android.support.v4.view.ViewPager$SavedState:
+    int position -> a
+    android.os.Parcelable adapterState -> b
+    java.lang.ClassLoader loader -> c
+    android.os.Parcelable$Creator CREATOR -> CREATOR
+    void writeToParcel(android.os.Parcel,int) -> writeToParcel
+    java.lang.String toString() -> toString
+android.support.v4.view.ViewPager$SavedState$1 -> android.support.v4.view.al:
+    android.support.v4.view.ViewPager$SavedState createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> b
+    android.support.v4.view.ViewPager$SavedState[] newArray(int) -> b
+    java.lang.Object[] newArray(int) -> a
+    java.lang.Object createFromParcel(android.os.Parcel,java.lang.ClassLoader) -> a
+android.support.v4.view.ViewPager$ViewPositionComparator -> android.support.v4.view.am:
+    int compare(android.view.View,android.view.View) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+android.support.v4.widget.EdgeEffectCompat -> android.support.v4.d.a:
+    java.lang.Object mEdgeEffect -> a
+    android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl IMPL -> b
+    void setSize(int,int) -> a
+    boolean isFinished() -> a
+    void finish() -> b
+    boolean onPull(float) -> a
+    boolean onRelease() -> c
+    boolean draw(android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl -> android.support.v4.d.b:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl -> android.support.v4.d.c:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl -> android.support.v4.d.d:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+android.support.v4.widget.EdgeEffectCompatIcs -> android.support.v4.d.e:
+    void setSize(java.lang.Object,int,int) -> a
+    boolean isFinished(java.lang.Object) -> a
+    void finish(java.lang.Object) -> b
+    boolean onPull(java.lang.Object,float) -> a
+    boolean onRelease(java.lang.Object) -> c
+    boolean draw(java.lang.Object,android.graphics.Canvas) -> a
+com.bde.light.activity.AdjustmentActivity -> com.bde.light.activity.AdjustmentActivity:
+    com.bde.light.model.Light myLight -> e
+    com.bde.light.service.BleService mService -> f
+    android.content.ServiceConnection onService -> g
+    android.bluetooth.BluetoothAdapter mBluetoothAdapter -> h
+    android.content.Context context -> a
+    android.widget.SeekBar mAdjustment -> i
+    android.widget.SeekBar mRange -> j
+    android.widget.Button open -> k
+    android.widget.Button close -> l
+    android.widget.Button endAdjustment -> m
+    android.widget.Button changeRange -> n
+    android.widget.TextView adjustment_tv -> o
+    android.widget.TextView rang_tv -> p
+    boolean updateOperationDone -> b
+    int operationTime -> q
+    int rangTime -> r
+    android.os.Handler mHandler -> s
+    android.app.AlertDialog successDialog -> c
+    android.app.AlertDialog failedDialog -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void showMySuccessDialog(int) -> a
+    void showMyFailDialog(int) -> b
+    void onClick(android.view.View) -> onClick
+    android.widget.SeekBar access$0(com.bde.light.activity.AdjustmentActivity) -> a
+    android.widget.SeekBar access$1(com.bde.light.activity.AdjustmentActivity) -> b
+    android.widget.Button access$2(com.bde.light.activity.AdjustmentActivity) -> c
+    android.widget.Button access$3(com.bde.light.activity.AdjustmentActivity) -> d
+    android.widget.Button access$4(com.bde.light.activity.AdjustmentActivity) -> e
+    android.widget.Button access$5(com.bde.light.activity.AdjustmentActivity) -> f
+    void access$6(com.bde.light.activity.AdjustmentActivity,com.bde.light.service.BleService) -> a
+    com.bde.light.service.BleService access$7(com.bde.light.activity.AdjustmentActivity) -> g
+    android.os.Handler access$8(com.bde.light.activity.AdjustmentActivity) -> h
+    com.bde.light.model.Light access$9(com.bde.light.activity.AdjustmentActivity) -> i
+    void access$10(com.bde.light.activity.AdjustmentActivity,int) -> a
+    android.widget.TextView access$11(com.bde.light.activity.AdjustmentActivity) -> j
+    int access$12(com.bde.light.activity.AdjustmentActivity) -> k
+    void access$13(com.bde.light.activity.AdjustmentActivity,int) -> b
+    android.widget.TextView access$14(com.bde.light.activity.AdjustmentActivity) -> l
+    int access$15(com.bde.light.activity.AdjustmentActivity) -> m
+com.bde.light.activity.AdjustmentActivity$1 -> com.bde.light.activity.a:
+    com.bde.light.activity.AdjustmentActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.bde.light.activity.AdjustmentActivity$2 -> com.bde.light.activity.b:
+    com.bde.light.activity.AdjustmentActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.bde.light.activity.AdjustmentActivity$3 -> com.bde.light.activity.c:
+    com.bde.light.activity.AdjustmentActivity this$0 -> a
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+com.bde.light.activity.AdjustmentActivity$4 -> com.bde.light.activity.d:
+    com.bde.light.activity.AdjustmentActivity this$0 -> a
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+com.bde.light.activity.AdjustmentActivity$5 -> com.bde.light.activity.e:
+    com.bde.light.activity.AdjustmentActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.bde.light.activity.AreaActivity -> com.bde.light.activity.AreaActivity:
+    android.widget.ListView listView -> i
+    com.bde.light.adapter.AreaAdapter areaAdapter -> j
+    java.util.ArrayList areaList -> k
+    java.util.ArrayList deleteBtnView -> l
+    com.bde.light.mgr.AreaMgr areaMgr -> m
+    com.bde.light.mgr.LightMgr lightMgr -> n
+    android.content.Context context -> o
+    android.widget.Button btn_delete -> a
+    float downX -> b
+    float downY -> c
+    float upX -> d
+    float upY -> e
+    int p1 -> f
+    int p2 -> g
+    com.bde.light.model.Area areaToDelete -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void initData() -> a
+    void onClick(android.view.View) -> onClick
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    com.bde.light.mgr.AreaMgr access$0(com.bde.light.activity.AreaActivity) -> a
+    java.util.ArrayList access$1(com.bde.light.activity.AreaActivity) -> b
+    com.bde.light.adapter.AreaAdapter access$2(com.bde.light.activity.AreaActivity) -> c
+    com.bde.light.mgr.LightMgr access$3(com.bde.light.activity.AreaActivity) -> d
+    android.content.Context access$4(com.bde.light.activity.AreaActivity) -> e
+com.bde.light.activity.AreaActivity$1 -> com.bde.light.activity.f:
+    com.bde.light.activity.AreaActivity this$0 -> a
+    android.widget.EditText val$nameEt -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.bde.light.activity.AreaActivity$2 -> com.bde.light.activity.g:
+    com.bde.light.activity.AreaActivity this$0 -> a
+    int val$size -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.bde.light.activity.AreaActivity$3 -> com.bde.light.activity.h:
+    com.bde.light.activity.AreaActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    com.bde.light.activity.AreaActivity access$0(com.bde.light.activity.AreaActivity$3) -> a
+com.bde.light.activity.AreaActivity$3$1 -> com.bde.light.activity.i:
+    com.bde.light.activity.AreaActivity$3 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.bde.light.activity.AreaActivity$3$2 -> com.bde.light.activity.j:
+    com.bde.light.activity.AreaActivity$3 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.bde.light.activity.DeviceActivity -> com.bde.light.activity.DeviceActivity:
+    android.widget.ListView listView -> a
+    java.util.ArrayList myList -> b
+    com.bde.light.service.BleService mService -> c
+    android.content.ServiceConnection onService -> d
+    com.bde.light.adapter.DeviceSettingAdapter myAdapter -> e
+    com.bde.light.mgr.LightMgr lightMgr -> f
+    java.util.ArrayList NumberList -> g
+    java.util.ArrayList EnglishList -> h
+    java.util.ArrayList ChineseList -> i
+    boolean isReturnFromDMActivity -> j
+    android.os.Handler mHandler -> k
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void onClick(android.view.View) -> onClick
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void addDeviceToScreen(com.bde.light.model.Light) -> a
+    boolean isEnglesh(java.lang.String) -> a
+    boolean isNumber(java.lang.String) -> b
+    java.util.ArrayList access$0(com.bde.light.activity.DeviceActivity) -> a
+    void access$1(com.bde.light.activity.DeviceActivity,com.bde.light.model.Light) -> a
+    com.bde.light.adapter.DeviceSettingAdapter access$2(com.bde.light.activity.DeviceActivity) -> b
+    void access$3(com.bde.light.activity.DeviceActivity,com.bde.light.service.BleService) -> a
+    com.bde.light.service.BleService access$4(com.bde.light.activity.DeviceActivity) -> c
+    android.os.Handler access$5(com.bde.light.activity.DeviceActivity) -> d
+com.bde.light.activity.DeviceActivity$1 -> com.bde.light.activity.k:
+    com.bde.light.activity.DeviceActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    com.bde.light.activity.DeviceActivity access$0(com.bde.light.activity.DeviceActivity$1) -> a
+com.bde.light.activity.DeviceActivity$1$1 -> com.bde.light.activity.l:
+    com.bde.light.activity.DeviceActivity$1 this$1 -> a
+    com.bde.light.model.Light val$light -> b
+    void run() -> run
+com.bde.light.activity.DeviceActivity$2 -> com.bde.light.activity.m:
+    com.bde.light.activity.DeviceActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    com.bde.light.activity.DeviceActivity access$0(com.bde.light.activity.DeviceActivity$2) -> a
+com.bde.light.activity.DeviceActivity$2$1 -> com.bde.light.activity.n:
+    com.bde.light.activity.DeviceActivity$2 this$1 -> a
+    void run() -> run
+com.bde.light.activity.DeviceManagerActivity -> com.bde.light.activity.DeviceManagerActivity:
+    android.widget.ListView listView -> a
+    com.bde.light.model.Light myLight -> b
+    com.bde.light.adapter.DeviceManagerAdapter myAdapter -> c
+    java.util.ArrayList list -> d
+    android.widget.ListView controlListView -> e
+    com.bde.light.activity.DeviceManagerActivity$DeviceControlAdapter controlAdapter -> f
+    java.util.ArrayList controlList -> g
+    com.util.SlipButton splitbutton -> h
+    com.bde.light.mgr.LightMgr mgr -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void initData() -> a
+    void bt_back(android.view.View) -> bt_back
+    void onBackPressed() -> onBackPressed
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    java.util.ArrayList access$0(com.bde.light.activity.DeviceManagerActivity) -> a
+    com.bde.light.activity.DeviceManagerActivity$DeviceControlAdapter access$1(com.bde.light.activity.DeviceManagerActivity) -> b
+    com.bde.light.model.Light access$2(com.bde.light.activity.DeviceManagerActivity) -> c
+com.bde.light.activity.DeviceManagerActivity$1 -> com.bde.light.activity.o:
+    com.bde.light.activity.DeviceManagerActivity this$0 -> a
+    void OnChanged(boolean) -> a
+com.bde.light.activity.DeviceManagerActivity$DeviceControlAdapter -> com.bde.light.activity.p:
+    com.bde.light.activity.DeviceManagerActivity this$0 -> a
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    com.bde.light.activity.DeviceManagerActivity access$0(com.bde.light.activity.DeviceManagerActivity$DeviceControlAdapter) -> a
+com.bde.light.activity.DeviceManagerActivity$DeviceControlAdapter$1 -> com.bde.light.activity.q:
+    com.bde.light.activity.DeviceManagerActivity$DeviceControlAdapter this$1 -> a
+    java.util.HashMap val$map -> b
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.DeviceManagerActivity$DeviceControlAdapter$2 -> com.bde.light.activity.r:
+    com.bde.light.activity.DeviceManagerActivity$DeviceControlAdapter this$1 -> a
+    java.util.HashMap val$map -> b
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.DeviceManagerActivity$DeviceControlAdapter$ViewHolder -> com.bde.light.activity.s:
+    android.widget.TextView tv_control_name -> a
+    android.widget.TextView tv_open -> b
+    android.widget.TextView tv_close -> c
+    android.widget.ImageView check_open -> d
+    android.widget.ImageView check_close -> e
+    com.bde.light.activity.DeviceManagerActivity$DeviceControlAdapter this$1 -> f
+com.bde.light.activity.EndInitActivity -> com.bde.light.activity.EndInitActivity:
+    com.bde.light.service.BleService mService -> b
+    android.content.ServiceConnection onService -> c
+    com.bde.light.model.Light myLight -> d
+    android.widget.Button upBtn -> e
+    android.widget.Button downBtn -> f
+    android.widget.Button confirmBtn -> g
+    boolean isConfirm -> h
+    boolean isEnterLongClick -> i
+    android.os.Handler mHandler -> j
+    com.bde.light.activity.EndInitActivity$WindowControlThread mWindowControlThread -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    boolean access$0(com.bde.light.activity.EndInitActivity) -> a
+    com.bde.light.service.BleService access$1(com.bde.light.activity.EndInitActivity) -> b
+    void access$2(com.bde.light.activity.EndInitActivity,com.bde.light.service.BleService) -> a
+    android.os.Handler access$3(com.bde.light.activity.EndInitActivity) -> c
+    android.widget.Button access$4(com.bde.light.activity.EndInitActivity) -> d
+    void access$5(com.bde.light.activity.EndInitActivity,boolean) -> a
+    boolean access$6(com.bde.light.activity.EndInitActivity) -> e
+    android.widget.Button access$7(com.bde.light.activity.EndInitActivity) -> f
+    void access$8(com.bde.light.activity.EndInitActivity,boolean) -> b
+com.bde.light.activity.EndInitActivity$1 -> com.bde.light.activity.t:
+    com.bde.light.activity.EndInitActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.bde.light.activity.EndInitActivity$10 -> com.bde.light.activity.u:
+    com.bde.light.activity.EndInitActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.EndInitActivity$2 -> com.bde.light.activity.v:
+    com.bde.light.activity.EndInitActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.bde.light.activity.EndInitActivity$3 -> com.bde.light.activity.w:
+    com.bde.light.activity.EndInitActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+com.bde.light.activity.EndInitActivity$4 -> com.bde.light.activity.x:
+    com.bde.light.activity.EndInitActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.bde.light.activity.EndInitActivity$5 -> com.bde.light.activity.y:
+    com.bde.light.activity.EndInitActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.EndInitActivity$6 -> com.bde.light.activity.z:
+    com.bde.light.activity.EndInitActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+com.bde.light.activity.EndInitActivity$7 -> com.bde.light.activity.aa:
+    com.bde.light.activity.EndInitActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.bde.light.activity.EndInitActivity$8 -> com.bde.light.activity.ab:
+    com.bde.light.activity.EndInitActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.EndInitActivity$9 -> com.bde.light.activity.ac:
+    com.bde.light.activity.EndInitActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.EndInitActivity$WindowControlThread -> com.bde.light.activity.ad:
+    boolean mIsRunning -> b
+    byte[] mData -> c
+    com.bde.light.activity.EndInitActivity this$0 -> a
+    void setRunning(boolean) -> a
+    void run() -> run
+com.bde.light.activity.InitActivity -> com.bde.light.activity.InitActivity:
+    com.bde.light.model.Light myLight -> b
+    android.content.ServiceConnection onService -> c
+    com.bde.light.service.BleService mService -> d
+    android.os.Handler mHandler -> e
+    com.bde.light.fragment.BaseFragment$Operation operation -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    com.bde.light.service.BleService access$0(com.bde.light.activity.InitActivity) -> a
+    void access$1(com.bde.light.activity.InitActivity,com.bde.light.service.BleService) -> a
+    android.os.Handler access$2(com.bde.light.activity.InitActivity) -> b
+    com.bde.light.model.Light access$3(com.bde.light.activity.InitActivity) -> c
+com.bde.light.activity.InitActivity$1 -> com.bde.light.activity.ae:
+    com.bde.light.activity.InitActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.bde.light.activity.InitActivity$2 -> com.bde.light.activity.af:
+    com.bde.light.activity.InitActivity this$0 -> a
+    void sendOperation(byte[],int) -> a
+com.bde.light.activity.InitActivity$3 -> com.bde.light.activity.ag:
+    com.bde.light.activity.InitActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.bde.light.activity.InitPasswordActivity -> com.bde.light.activity.InitPasswordActivity:
+    android.widget.EditText et_init_password -> c
+    com.bde.light.service.BleService mService -> d
+    android.content.ServiceConnection onService -> e
+    android.bluetooth.BluetoothAdapter mBluetoothAdapter -> f
+    android.content.Context context -> g
+    com.bde.light.model.Light myLight -> h
+    android.app.ProgressDialog progressDialog -> a
+    boolean isOperationDone -> b
+    android.os.Handler mHandler -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void confirm(android.view.View) -> confirm
+    void showMySuccessDialog(int) -> a
+    void showMyFailDialog(int) -> b
+    void onClick(android.view.View) -> onClick
+    android.content.Context access$0(com.bde.light.activity.InitPasswordActivity) -> a
+    com.bde.light.model.Light access$1(com.bde.light.activity.InitPasswordActivity) -> b
+    void access$2(com.bde.light.activity.InitPasswordActivity,com.bde.light.service.BleService) -> a
+    com.bde.light.service.BleService access$3(com.bde.light.activity.InitPasswordActivity) -> c
+    android.os.Handler access$4(com.bde.light.activity.InitPasswordActivity) -> d
+com.bde.light.activity.InitPasswordActivity$1 -> com.bde.light.activity.ah:
+    com.bde.light.activity.InitPasswordActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.bde.light.activity.InitPasswordActivity$2 -> com.bde.light.activity.ai:
+    com.bde.light.activity.InitPasswordActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.bde.light.activity.InitPasswordActivity$3 -> com.bde.light.activity.aj:
+    com.bde.light.activity.InitPasswordActivity this$0 -> a
+    void run() -> run
+com.bde.light.activity.InitPasswordActivity$4 -> com.bde.light.activity.ak:
+    com.bde.light.activity.InitPasswordActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.bde.light.activity.InitializeActivity -> com.bde.light.activity.InitializeActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onDestroy() -> onDestroy
+com.bde.light.activity.InitializeActivity$1 -> com.bde.light.activity.al:
+    com.bde.light.activity.InitializeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.InitializeActivity$2 -> com.bde.light.activity.am:
+    com.bde.light.activity.InitializeActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.LanguageActivity -> com.bde.light.activity.LanguageActivity:
+    android.widget.ListView listView -> a
+    java.util.ArrayList list -> b
+    com.bde.light.adapter.LanguageAdapter languageAdapter -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void initData() -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onClick(android.view.View) -> onClick
+    void moveBack() -> b
+    void switchLanguage(java.util.Locale) -> a
+    void onBackPressed() -> onBackPressed
+com.bde.light.activity.LaunchActivity -> com.bde.light.activity.LaunchActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void run() -> run
+com.bde.light.activity.MainActivity -> com.bde.light.activity.MainActivity:
+    android.widget.GridView gridView -> D
+    android.bluetooth.BluetoothAdapter mBluetoothAdapter -> E
+    com.bde.light.adapter.DeviceAdapter deviceAdapter -> F
+    com.bde.light.service.BleService mService -> G
+    android.content.ServiceConnection onService -> H
+    android.hardware.SensorManager mSensorManager -> I
+    android.hardware.Sensor mSensor -> J
+    android.app.ProgressDialog dialog -> K
+    android.widget.Button mOpenBtn -> L
+    android.widget.Button mCloseBtn -> M
+    android.app.AlertDialog brightnessControlDialog -> N
+    android.app.AlertDialog windowControlDialog -> O
+    android.widget.TextView noDevice -> P
+    com.bde.light.model.Light myLight -> Q
+    java.util.ArrayList myList -> R
+    java.util.ArrayList allMyList -> S
+    java.util.ArrayList lightList -> T
+    java.util.ArrayList onList -> U
+    java.util.ArrayList sensorLights -> V
+    java.util.ArrayList shakeList -> W
+    java.util.ArrayList shakeCopyList -> X
+    java.util.ArrayList closeList -> Y
+    java.util.ArrayList closeOKList -> Z
+    android.widget.ListView deviceListView -> aa
+    java.util.ArrayList EnglishList -> ab
+    java.util.ArrayList NumberList -> ac
+    java.util.ArrayList ChineseList -> ad
+    java.util.ArrayList NoSignalList -> ae
+    java.util.LinkedList rssiQueue -> af
+    java.util.ArrayList LightToDeleteList -> ag
+    java.util.ArrayList areaList -> ah
+    com.bde.light.adapter.AreaAdapter areaAdapter -> ai
+    android.widget.ListView areaListView -> aj
+    com.bde.light.mgr.LightMgr lightMgr -> ak
+    com.bde.light.mgr.AreaMgr areaMgr -> al
+    java.lang.String areaSelected -> am
+    android.widget.ImageView arrows -> an
+    android.widget.TextView tv_title -> ao
+    long lastUpdate -> ap
+    long lastShakeTime -> aq
+    float x -> ar
+    float y -> as
+    float z -> at
+    float last_x -> au
+    float last_y -> av
+    float last_z -> aw
+    java.util.Queue onQueue -> ax
+    android.widget.SeekBar brightness -> ay
+    int hasOperationPerTenSecond -> az
+    android.widget.Button btn_delete -> a
+    int sleepTime -> b
+    android.widget.ImageView iv_signal -> c
+    com.bde.light.activity.MainActivity$checkDeviceIsCloseThread thread -> d
+    float downX -> e
+    float downY -> f
+    float upX -> g
+    float upY -> h
+    int p1 -> i
+    int p2 -> j
+    int numberStart -> k
+    int englishStart -> l
+    int chineseStart -> m
+    int numberEnd -> n
+    int englishEnd -> o
+    int chineseEnd -> p
+    int currentRepeatTimes -> q
+    boolean isOperating -> aA
+    boolean isCloseOperationDone -> aB
+    boolean isAllOnOrOffOperationDone -> aC
+    boolean isShakeOperationDone -> aD
+    int onOrOff -> aE
+    java.util.ArrayList deleteBtnView -> aF
+    android.os.Handler checkHandler -> aG
+    boolean isRunning -> r
+    int brightnesses -> s
+    boolean isOperationDone -> t
+    android.os.Handler mHandler -> aH
+    boolean isValidating -> u
+    android.os.Handler mActivityHandler -> aI
+    long time -> v
+    com.bde.light.activity.MainActivity$WindowControlThread mWindowControlThread -> w
+    boolean isEnterLongClick -> x
+    android.content.BroadcastReceiver mReceiver -> aJ
+    int mOldSize -> y
+    int waitTime -> z
+    java.lang.String mCurOperateAddress -> A
+    com.bde.light.activity.MainActivity$CheckLightFinishThread mCurCheckThread -> B
+    boolean isBtnDeleteClicked -> C
+    boolean mIsCheck -> aK
+    void addDeviceToScreen(com.bde.light.model.Light) -> d
+    boolean isEnglesh(java.lang.String) -> a
+    boolean isNumber(java.lang.String) -> b
+    com.bde.light.model.Light findLight(java.util.ArrayList,com.bde.light.model.Light) -> a
+    java.util.ArrayList findByArea(java.lang.String) -> c
+    android.app.AlertDialog createBrightnessControlDialog(android.content.Context,android.view.View) -> a
+    android.app.AlertDialog createWindowControlDialog(android.content.Context,android.view.View) -> b
+    void setUpLastSetting() -> d
+    void initBrightnessControl() -> e
+    void initWindowControl() -> f
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onResume() -> onResume
+    void onPause() -> onPause
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void initSensor() -> a
+    void initGridView() -> g
+    void setGridViewListener() -> h
+    void allOnOrOff() -> b
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void onBackPressed() -> onBackPressed
+    java.util.ArrayList selectQulifyShake() -> c
+    void shakeOpenOrClose(int) -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    void controlWindow(com.bde.light.model.Light) -> e
+    void turnOnOrOff(com.bde.light.model.Light) -> a
+    void turnOnOrOffLED(com.bde.light.model.Light) -> b
+    void openLock(com.bde.light.model.Light) -> c
+    void onClick(android.view.View) -> onClick
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void areaSwitch(com.bde.light.model.Area) -> a
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void startScanAndCheck(boolean) -> a
+    void switchLanguage(java.util.Locale) -> a
+    void access$0(com.bde.light.activity.MainActivity,com.bde.light.model.Light) -> a
+    java.util.ArrayList access$1(com.bde.light.activity.MainActivity) -> a
+    boolean access$2(com.bde.light.activity.MainActivity) -> b
+    void access$3(com.bde.light.activity.MainActivity,boolean) -> a
+    void access$4(com.bde.light.activity.MainActivity,boolean) -> b
+    void access$5(com.bde.light.activity.MainActivity,boolean) -> c
+    java.util.ArrayList access$6(com.bde.light.activity.MainActivity) -> c
+    com.bde.light.service.BleService access$7(com.bde.light.activity.MainActivity) -> d
+    android.app.ProgressDialog access$8(com.bde.light.activity.MainActivity) -> e
+    java.util.ArrayList access$9(com.bde.light.activity.MainActivity) -> f
+    android.os.Handler access$10(com.bde.light.activity.MainActivity) -> g
+    com.bde.light.model.Light access$11(com.bde.light.activity.MainActivity) -> h
+    com.bde.light.mgr.LightMgr access$12(com.bde.light.activity.MainActivity) -> i
+    java.util.ArrayList access$13(com.bde.light.activity.MainActivity) -> j
+    java.lang.String access$14(com.bde.light.activity.MainActivity) -> k
+    android.widget.TextView access$15(com.bde.light.activity.MainActivity) -> l
+    com.bde.light.adapter.DeviceAdapter access$16(com.bde.light.activity.MainActivity) -> m
+    java.util.ArrayList access$17(com.bde.light.activity.MainActivity) -> n
+    java.util.ArrayList access$18(com.bde.light.activity.MainActivity) -> o
+    void access$19(com.bde.light.activity.MainActivity,boolean) -> d
+    void access$20(com.bde.light.activity.MainActivity,boolean) -> e
+    void access$21(com.bde.light.activity.MainActivity,boolean) -> f
+    java.util.ArrayList access$22(com.bde.light.activity.MainActivity) -> p
+    int access$23(com.bde.light.activity.MainActivity) -> q
+    android.bluetooth.BluetoothAdapter access$24(com.bde.light.activity.MainActivity) -> r
+    android.app.AlertDialog access$25(com.bde.light.activity.MainActivity) -> s
+    android.widget.SeekBar access$26(com.bde.light.activity.MainActivity) -> t
+    void access$27(com.bde.light.activity.MainActivity,com.bde.light.model.Light) -> b
+    java.util.ArrayList access$28(com.bde.light.activity.MainActivity,java.lang.String) -> a
+    void access$29(com.bde.light.activity.MainActivity,java.util.ArrayList) -> a
+    void access$30(com.bde.light.activity.MainActivity,com.bde.light.model.Light) -> c
+    android.app.AlertDialog access$31(com.bde.light.activity.MainActivity) -> u
+    boolean access$32(com.bde.light.activity.MainActivity) -> v
+    java.util.ArrayList access$33(com.bde.light.activity.MainActivity) -> w
+    boolean access$34(com.bde.light.activity.MainActivity,java.lang.String) -> b
+    boolean access$35(com.bde.light.activity.MainActivity,java.lang.String) -> c
+    java.util.ArrayList access$36(com.bde.light.activity.MainActivity) -> x
+    java.util.ArrayList access$37(com.bde.light.activity.MainActivity) -> y
+    java.util.ArrayList access$38(com.bde.light.activity.MainActivity) -> z
+    java.util.ArrayList access$39(com.bde.light.activity.MainActivity) -> A
+    android.os.Handler access$40(com.bde.light.activity.MainActivity) -> B
+    android.widget.Button access$41(com.bde.light.activity.MainActivity) -> C
+    android.widget.Button access$42(com.bde.light.activity.MainActivity) -> D
+    void access$43(com.bde.light.activity.MainActivity,com.bde.light.service.BleService) -> a
+    android.os.Handler access$44(com.bde.light.activity.MainActivity) -> E
+    boolean access$45(com.bde.light.activity.MainActivity) -> F
+    void access$46(com.bde.light.activity.MainActivity,int) -> a
+    android.widget.ListView access$47(com.bde.light.activity.MainActivity) -> G
+    void access$48(com.bde.light.activity.MainActivity,java.util.ArrayList) -> b
+com.bde.light.activity.MainActivity$1 -> com.bde.light.activity.an:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    com.bde.light.activity.MainActivity access$0(com.bde.light.activity.MainActivity$1) -> a
+com.bde.light.activity.MainActivity$1$1 -> com.bde.light.activity.ao:
+    com.bde.light.activity.MainActivity$1 this$1 -> a
+    com.bde.light.model.Light val$light -> b
+    void run() -> run
+com.bde.light.activity.MainActivity$10 -> com.bde.light.activity.ap:
+    com.bde.light.activity.MainActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+com.bde.light.activity.MainActivity$11 -> com.bde.light.activity.aq:
+    com.bde.light.activity.MainActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.bde.light.activity.MainActivity$12 -> com.bde.light.activity.ar:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.MainActivity$13 -> com.bde.light.activity.as:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void onDismiss(android.content.DialogInterface) -> onDismiss
+com.bde.light.activity.MainActivity$14 -> com.bde.light.activity.at:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    com.bde.light.activity.MainActivity access$0(com.bde.light.activity.MainActivity$14) -> a
+com.bde.light.activity.MainActivity$14$1 -> com.bde.light.activity.au:
+    com.bde.light.activity.MainActivity$14 this$1 -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$15 -> com.bde.light.activity.av:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$16 -> com.bde.light.activity.aw:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$17 -> com.bde.light.activity.ax:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.bde.light.activity.MainActivity$18 -> com.bde.light.activity.ay:
+    com.bde.light.activity.MainActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.bde.light.activity.MainActivity$19 -> com.bde.light.activity.az:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$2 -> com.bde.light.activity.ba:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    com.bde.light.activity.MainActivity access$0(com.bde.light.activity.MainActivity$2) -> a
+com.bde.light.activity.MainActivity$2$1 -> com.bde.light.activity.bb:
+    com.bde.light.activity.MainActivity$2 this$1 -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$2$2 -> com.bde.light.activity.bc:
+    com.bde.light.activity.MainActivity$2 this$1 -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$2$3 -> com.bde.light.activity.bd:
+    com.bde.light.activity.MainActivity$2 this$1 -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$2$4 -> com.bde.light.activity.be:
+    com.bde.light.activity.MainActivity$2 this$1 -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$2$5 -> com.bde.light.activity.bf:
+    com.bde.light.activity.MainActivity$2 this$1 -> a
+    void onProgressChanged(android.widget.SeekBar,int,boolean) -> onProgressChanged
+    void onStartTrackingTouch(android.widget.SeekBar) -> onStartTrackingTouch
+    void onStopTrackingTouch(android.widget.SeekBar) -> onStopTrackingTouch
+com.bde.light.activity.MainActivity$2$6 -> com.bde.light.activity.bg:
+    com.bde.light.activity.MainActivity$2 this$1 -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$3 -> com.bde.light.activity.bh:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    com.bde.light.activity.MainActivity access$0(com.bde.light.activity.MainActivity$3) -> a
+com.bde.light.activity.MainActivity$3$1 -> com.bde.light.activity.bi:
+    com.bde.light.activity.MainActivity$3 this$1 -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$4 -> com.bde.light.activity.bj:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void onDismiss(android.content.DialogInterface) -> onDismiss
+com.bde.light.activity.MainActivity$5 -> com.bde.light.activity.bk:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.MainActivity$6 -> com.bde.light.activity.bl:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void onDismiss(android.content.DialogInterface) -> onDismiss
+com.bde.light.activity.MainActivity$7 -> com.bde.light.activity.bm:
+    com.bde.light.activity.MainActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+com.bde.light.activity.MainActivity$8 -> com.bde.light.activity.bn:
+    com.bde.light.activity.MainActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.bde.light.activity.MainActivity$9 -> com.bde.light.activity.bo:
+    com.bde.light.activity.MainActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.MainActivity$CheckLightFinishThread -> com.bde.light.activity.bp:
+    java.lang.String mCheckAddress -> b
+    com.bde.light.activity.MainActivity this$0 -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$WindowControlThread -> com.bde.light.activity.bq:
+    boolean mIsRunning -> b
+    byte[] mData -> c
+    com.bde.light.activity.MainActivity this$0 -> a
+    void setRunning(boolean) -> a
+    void run() -> run
+com.bde.light.activity.MainActivity$checkDeviceIsCloseThread -> com.bde.light.activity.br:
+    boolean isStart -> b
+    boolean isCheckThisTime -> c
+    com.bde.light.activity.MainActivity this$0 -> a
+    void setCheckThisTime(boolean) -> a
+    void run() -> run
+    com.bde.light.activity.MainActivity access$0(com.bde.light.activity.MainActivity$checkDeviceIsCloseThread) -> a
+com.bde.light.activity.MainActivity$checkDeviceIsCloseThread$1 -> com.bde.light.activity.bs:
+    com.bde.light.activity.MainActivity$checkDeviceIsCloseThread this$1 -> a
+    void run() -> run
+com.bde.light.activity.R -> com.bde.light.activity.bt:
+com.bde.light.activity.R$styleable -> com.bde.light.activity.bu:
+    int[] DragSortListView -> DragSortListView
+    int DragSortListView_click_remove_id -> DragSortListView_click_remove_id
+    int DragSortListView_collapsed_height -> DragSortListView_collapsed_height
+    int DragSortListView_drag_enabled -> DragSortListView_drag_enabled
+    int DragSortListView_drag_handle_id -> DragSortListView_drag_handle_id
+    int DragSortListView_drag_scroll_start -> DragSortListView_drag_scroll_start
+    int DragSortListView_drag_start_mode -> DragSortListView_drag_start_mode
+    int DragSortListView_drop_animation_duration -> DragSortListView_drop_animation_duration
+    int DragSortListView_fling_handle_id -> DragSortListView_fling_handle_id
+    int DragSortListView_float_alpha -> DragSortListView_float_alpha
+    int DragSortListView_float_background_color -> DragSortListView_float_background_color
+    int DragSortListView_max_drag_scroll_speed -> DragSortListView_max_drag_scroll_speed
+    int DragSortListView_remove_animation_duration -> DragSortListView_remove_animation_duration
+    int DragSortListView_remove_enabled -> DragSortListView_remove_enabled
+    int DragSortListView_remove_mode -> DragSortListView_remove_mode
+    int DragSortListView_slide_shuffle_speed -> DragSortListView_slide_shuffle_speed
+    int DragSortListView_sort_enabled -> DragSortListView_sort_enabled
+    int DragSortListView_track_drag_sort -> DragSortListView_track_drag_sort
+    int DragSortListView_use_default_controller -> DragSortListView_use_default_controller
+com.bde.light.activity.SettingActivity -> com.bde.light.activity.SettingActivity:
+    android.widget.ListView listView -> a
+    android.content.Intent mIntent -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void initData() -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void onClick(android.view.View) -> onClick
+    void onBackPressed() -> onBackPressed
+com.bde.light.activity.StartInitActivity -> com.bde.light.activity.StartInitActivity:
+    com.bde.light.service.BleService mService -> b
+    android.content.ServiceConnection onService -> c
+    com.bde.light.model.Light myLight -> d
+    android.widget.Button upBtn -> e
+    android.widget.Button downBtn -> f
+    android.widget.Button confirmBtn -> g
+    boolean isConfirm -> h
+    boolean isEnterLongClick -> i
+    android.os.Handler mHandler -> j
+    com.bde.light.activity.StartInitActivity$WindowControlThread mWindowControlThread -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void openOrClose(boolean) -> a
+    byte[] getOpenOrCloseData(boolean) -> b
+    android.widget.Button access$0(com.bde.light.activity.StartInitActivity) -> a
+    android.widget.Button access$1(com.bde.light.activity.StartInitActivity) -> b
+    android.widget.Button access$2(com.bde.light.activity.StartInitActivity) -> c
+    boolean access$3(com.bde.light.activity.StartInitActivity) -> d
+    com.bde.light.model.Light access$4(com.bde.light.activity.StartInitActivity) -> e
+    com.bde.light.service.BleService access$5(com.bde.light.activity.StartInitActivity) -> f
+    void access$6(com.bde.light.activity.StartInitActivity,com.bde.light.service.BleService) -> a
+    android.os.Handler access$7(com.bde.light.activity.StartInitActivity) -> g
+    byte[] access$8(com.bde.light.activity.StartInitActivity,boolean) -> a
+    void access$9(com.bde.light.activity.StartInitActivity,boolean) -> b
+    boolean access$10(com.bde.light.activity.StartInitActivity) -> h
+    void access$11(com.bde.light.activity.StartInitActivity,boolean) -> c
+    void access$12(com.bde.light.activity.StartInitActivity,boolean) -> d
+com.bde.light.activity.StartInitActivity$1 -> com.bde.light.activity.bv:
+    com.bde.light.activity.StartInitActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.bde.light.activity.StartInitActivity$10 -> com.bde.light.activity.bw:
+    com.bde.light.activity.StartInitActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.StartInitActivity$2 -> com.bde.light.activity.bx:
+    com.bde.light.activity.StartInitActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.StartInitActivity$3 -> com.bde.light.activity.by:
+    com.bde.light.activity.StartInitActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.bde.light.activity.StartInitActivity$4 -> com.bde.light.activity.bz:
+    com.bde.light.activity.StartInitActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+com.bde.light.activity.StartInitActivity$5 -> com.bde.light.activity.ca:
+    com.bde.light.activity.StartInitActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.bde.light.activity.StartInitActivity$6 -> com.bde.light.activity.cb:
+    com.bde.light.activity.StartInitActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.StartInitActivity$7 -> com.bde.light.activity.cc:
+    com.bde.light.activity.StartInitActivity this$0 -> a
+    boolean onLongClick(android.view.View) -> onLongClick
+com.bde.light.activity.StartInitActivity$8 -> com.bde.light.activity.cd:
+    com.bde.light.activity.StartInitActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.bde.light.activity.StartInitActivity$9 -> com.bde.light.activity.ce:
+    com.bde.light.activity.StartInitActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.StartInitActivity$WindowControlThread -> com.bde.light.activity.cf:
+    boolean mIsRunning -> b
+    byte[] mData -> c
+    com.bde.light.activity.StartInitActivity this$0 -> a
+    void setRunning(boolean) -> a
+    void run() -> run
+com.bde.light.activity.TimerActivity -> com.bde.light.activity.TimerActivity:
+    android.widget.ListView timerListView -> h
+    com.bde.light.myview.DragSortListView ddlv -> i
+    int operation -> j
+    android.widget.Button btn_add -> k
+    java.util.ArrayList timerList -> l
+    com.bde.light.adapter.TimerAdapter timerAdapter -> m
+    com.bde.light.mgr.TimerMgr timerMgr -> n
+    com.bde.light.service.BleService mService -> o
+    android.content.ServiceConnection onService -> p
+    android.bluetooth.BluetoothAdapter mBluetoothAdapter -> q
+    java.util.Queue deleteQueue -> r
+    com.bde.light.model.Timer myTimer -> s
+    com.bde.light.model.Timer myOldTimer -> t
+    int action -> u
+    android.app.ProgressDialog dialog -> v
+    boolean operationComplete -> a
+    android.widget.TextView noTimer -> w
+    android.content.Context mContext -> x
+    int TIMER_TO_DELETE -> y
+    float downX -> b
+    float downY -> c
+    float upX -> d
+    float upY -> e
+    int p1 -> f
+    int p2 -> g
+    android.os.Handler mTimerHandler -> z
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onCreate(android.os.Bundle) -> onCreate
+    void initView() -> b
+    void initDeviceList() -> a
+    void onStart() -> onStart
+    void onClick(android.view.View) -> onClick
+    int getSeconds(int,int,int,int,int) -> a
+    void onDestroy() -> onDestroy
+    android.app.ProgressDialog access$0(com.bde.light.activity.TimerActivity) -> a
+    com.bde.light.model.Timer access$1(com.bde.light.activity.TimerActivity) -> b
+    int access$2(com.bde.light.activity.TimerActivity) -> c
+    com.bde.light.mgr.TimerMgr access$3(com.bde.light.activity.TimerActivity) -> d
+    java.util.ArrayList access$4(com.bde.light.activity.TimerActivity) -> e
+    java.util.Queue access$5(com.bde.light.activity.TimerActivity) -> f
+    android.os.Handler access$6(com.bde.light.activity.TimerActivity) -> g
+    android.content.Context access$7(com.bde.light.activity.TimerActivity) -> h
+    android.widget.ListView access$8(com.bde.light.activity.TimerActivity) -> i
+    com.bde.light.model.Timer access$9(com.bde.light.activity.TimerActivity) -> j
+    com.bde.light.adapter.TimerAdapter access$10(com.bde.light.activity.TimerActivity) -> k
+    android.widget.TextView access$11(com.bde.light.activity.TimerActivity) -> l
+    void access$12(com.bde.light.activity.TimerActivity,com.bde.light.service.BleService) -> a
+    com.bde.light.service.BleService access$13(com.bde.light.activity.TimerActivity) -> m
+    com.bde.light.myview.DragSortListView access$14(com.bde.light.activity.TimerActivity) -> n
+    void access$15(com.bde.light.activity.TimerActivity,com.bde.light.model.Timer) -> a
+    void access$16(com.bde.light.activity.TimerActivity,int) -> a
+    android.bluetooth.BluetoothAdapter access$17(com.bde.light.activity.TimerActivity) -> o
+com.bde.light.activity.TimerActivity$1 -> com.bde.light.activity.cg:
+    com.bde.light.activity.TimerActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.bde.light.activity.TimerActivity$2 -> com.bde.light.activity.ch:
+    com.bde.light.activity.TimerActivity this$0 -> a
+    void run() -> run
+    com.bde.light.activity.TimerActivity access$0(com.bde.light.activity.TimerActivity$2) -> a
+com.bde.light.activity.TimerActivity$2$1 -> com.bde.light.activity.ci:
+    com.bde.light.activity.TimerActivity$2 this$1 -> a
+    void run() -> run
+com.bde.light.activity.TimerActivity$3 -> com.bde.light.activity.cj:
+    com.bde.light.activity.TimerActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.bde.light.activity.TimerActivity$4 -> com.bde.light.activity.ck:
+    com.bde.light.activity.TimerActivity this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    com.bde.light.activity.TimerActivity access$0(com.bde.light.activity.TimerActivity$4) -> a
+com.bde.light.activity.TimerActivity$4$1 -> com.bde.light.activity.cl:
+    com.bde.light.activity.TimerActivity$4 this$1 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.TimerActivity$RemoveTimerWhenFinished -> com.bde.light.activity.cm:
+    android.content.Context mContext -> b
+    com.bde.light.mgr.TimerMgr mTimerMgr -> c
+    com.bde.light.model.Timer mTimer -> d
+    com.bde.light.activity.TimerActivity this$0 -> a
+    void run() -> run
+com.bde.light.activity.TimerDialogActivity -> com.bde.light.activity.TimerDialogActivity:
+    android.widget.TimePicker timePicker -> a
+    android.widget.TextView select_device -> b
+    android.widget.ImageView open_check -> c
+    android.widget.ImageView close_check -> d
+    android.widget.ListView deviceListView -> e
+    android.widget.Button btn_save -> f
+    java.util.ArrayList deviceList -> g
+    com.bde.light.adapter.AddTimerDeviceAdapter lightAdapter -> h
+    android.widget.ImageView btn_close -> i
+    com.bde.light.model.Timer timer -> j
+    int operation -> k
+    android.widget.TextView open_tv -> l
+    android.widget.TextView close_tv -> m
+    void onCreate(android.os.Bundle) -> onCreate
+    void findViews() -> a
+    void initData() -> b
+    void setListeners() -> c
+    int getSeconds(int,int,int,int) -> a
+    android.widget.ListView access$0(com.bde.light.activity.TimerDialogActivity) -> a
+    android.widget.ImageView access$1(com.bde.light.activity.TimerDialogActivity) -> b
+    android.widget.ImageView access$2(com.bde.light.activity.TimerDialogActivity) -> c
+    com.bde.light.model.Timer access$3(com.bde.light.activity.TimerDialogActivity) -> d
+    java.util.ArrayList access$4(com.bde.light.activity.TimerDialogActivity) -> e
+    android.widget.TextView access$5(com.bde.light.activity.TimerDialogActivity) -> f
+    android.widget.TextView access$6(com.bde.light.activity.TimerDialogActivity) -> g
+    android.widget.TextView access$7(com.bde.light.activity.TimerDialogActivity) -> h
+    android.widget.TimePicker access$8(com.bde.light.activity.TimerDialogActivity) -> i
+    int access$9(com.bde.light.activity.TimerDialogActivity) -> j
+com.bde.light.activity.TimerDialogActivity$1 -> com.bde.light.activity.cn:
+    com.bde.light.activity.TimerDialogActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.TimerDialogActivity$2 -> com.bde.light.activity.co:
+    com.bde.light.activity.TimerDialogActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.TimerDialogActivity$3 -> com.bde.light.activity.cp:
+    com.bde.light.activity.TimerDialogActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.TimerDialogActivity$4 -> com.bde.light.activity.cq:
+    com.bde.light.activity.TimerDialogActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.TimerDialogActivity$5 -> com.bde.light.activity.cr:
+    com.bde.light.activity.TimerDialogActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.TimerDialogActivity$6 -> com.bde.light.activity.cs:
+    com.bde.light.activity.TimerDialogActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.TimerDialogActivity$7 -> com.bde.light.activity.ct:
+    com.bde.light.activity.TimerDialogActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.bde.light.activity.TimerDialogActivity$8 -> com.bde.light.activity.cu:
+    com.bde.light.activity.TimerDialogActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.activity.UpdateAreaActivity -> com.bde.light.activity.UpdateAreaActivity:
+    java.util.ArrayList list -> a
+    com.bde.light.adapter.UpdateAreaAdapter myAdapter -> b
+    com.bde.light.model.Light myLight -> c
+    android.widget.ListView listView -> d
+    com.bde.light.mgr.LightMgr lightMgr -> e
+    com.bde.light.mgr.AreaMgr areaMgr -> f
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onClick(android.view.View) -> onClick
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void init() -> a
+com.bde.light.activity.UpdateNameActivity -> com.bde.light.activity.UpdateNameActivity:
+    com.bde.light.model.Light myLight -> d
+    com.bde.light.mgr.LightMgr lightMgr -> e
+    android.widget.EditText et_name -> f
+    com.bde.light.service.BleService mService -> g
+    android.content.ServiceConnection onService -> h
+    android.bluetooth.BluetoothAdapter mBluetoothAdapter -> i
+    android.content.Context context -> a
+    android.app.ProgressDialog progressDialog -> b
+    boolean updateOperationDone -> c
+    android.os.Handler mHandler -> j
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void confirm(android.view.View) -> confirm
+    void progressDialog(int) -> b
+    void showMyDialog(int) -> a
+    void onClick(android.view.View) -> onClick
+    com.bde.light.mgr.LightMgr access$0(com.bde.light.activity.UpdateNameActivity) -> a
+    com.bde.light.model.Light access$1(com.bde.light.activity.UpdateNameActivity) -> b
+    void access$2(com.bde.light.activity.UpdateNameActivity,com.bde.light.service.BleService) -> a
+    com.bde.light.service.BleService access$3(com.bde.light.activity.UpdateNameActivity) -> c
+    android.os.Handler access$4(com.bde.light.activity.UpdateNameActivity) -> d
+com.bde.light.activity.UpdateNameActivity$1 -> com.bde.light.activity.cv:
+    com.bde.light.activity.UpdateNameActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.bde.light.activity.UpdateNameActivity$2 -> com.bde.light.activity.cw:
+    com.bde.light.activity.UpdateNameActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.bde.light.activity.UpdateNameActivity$3 -> com.bde.light.activity.cx:
+    com.bde.light.activity.UpdateNameActivity this$0 -> a
+    void run() -> run
+com.bde.light.activity.UpdateNameActivity$4 -> com.bde.light.activity.cy:
+    com.bde.light.activity.UpdateNameActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.bde.light.activity.UpdatePasswordActivity -> com.bde.light.activity.UpdatePasswordActivity:
+    com.bde.light.model.Light myLight -> c
+    android.widget.EditText et_old_password -> d
+    android.widget.EditText et_new_password -> e
+    android.widget.EditText et_repeat_password -> f
+    com.bde.light.service.BleService mService -> g
+    android.content.ServiceConnection onService -> h
+    android.bluetooth.BluetoothAdapter mBluetoothAdapter -> i
+    android.content.Context context -> j
+    android.app.ProgressDialog progressDialog -> a
+    boolean operationDone -> b
+    android.os.Handler mHandler -> k
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void confirm(android.view.View) -> confirm
+    void showProgressDialog(java.lang.String) -> a
+    void showMySuccessDialog(int) -> a
+    void showMyDialog(int) -> b
+    void onClick(android.view.View) -> onClick
+    com.bde.light.model.Light access$0(com.bde.light.activity.UpdatePasswordActivity) -> a
+    android.content.Context access$1(com.bde.light.activity.UpdatePasswordActivity) -> b
+    void access$2(com.bde.light.activity.UpdatePasswordActivity,com.bde.light.service.BleService) -> a
+    com.bde.light.service.BleService access$3(com.bde.light.activity.UpdatePasswordActivity) -> c
+    android.os.Handler access$4(com.bde.light.activity.UpdatePasswordActivity) -> d
+com.bde.light.activity.UpdatePasswordActivity$1 -> com.bde.light.activity.cz:
+    com.bde.light.activity.UpdatePasswordActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.bde.light.activity.UpdatePasswordActivity$2 -> com.bde.light.activity.da:
+    com.bde.light.activity.UpdatePasswordActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.bde.light.activity.UpdatePasswordActivity$3 -> com.bde.light.activity.db:
+    com.bde.light.activity.UpdatePasswordActivity this$0 -> a
+    void run() -> run
+com.bde.light.activity.UpdatePasswordActivity$4 -> com.bde.light.activity.dc:
+    com.bde.light.activity.UpdatePasswordActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.bde.light.activity.ValidateActivity -> com.bde.light.activity.ValidateActivity:
+    com.bde.light.model.Light light -> a
+    android.widget.EditText et_password -> b
+    android.widget.EditText et_name -> c
+    android.widget.EditText et_area -> d
+    android.widget.ListView areaListView -> e
+    java.util.ArrayList areaList -> f
+    android.widget.Spinner mInputArea -> g
+    android.widget.ArrayAdapter mInputAreaAdapter -> h
+    java.util.ArrayList mAllArea -> i
+    java.lang.String mValidateArea -> j
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void onClick(android.view.View) -> onClick
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    java.util.ArrayList access$0(com.bde.light.activity.ValidateActivity) -> a
+    void access$1(com.bde.light.activity.ValidateActivity,java.lang.String) -> a
+com.bde.light.activity.ValidateActivity$1 -> com.bde.light.activity.dd:
+    com.bde.light.activity.ValidateActivity this$0 -> a
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+com.bde.light.adapter.AddTimerDeviceAdapter -> com.bde.light.a.a:
+    java.util.ArrayList list -> a
+    android.content.Context context -> b
+    int getCount() -> getCount
+    com.bde.light.model.Light getItem(int) -> a
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    java.lang.Object getItem(int) -> getItem
+com.bde.light.adapter.AddTimerDeviceAdapter$ViewHolder -> com.bde.light.a.b:
+    android.widget.TextView tv_lightName -> a
+    com.bde.light.adapter.AddTimerDeviceAdapter this$0 -> b
+com.bde.light.adapter.AreaAdapter -> com.bde.light.a.c:
+    java.util.ArrayList list -> a
+    android.content.Context context -> b
+    int item_layout -> c
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.bde.light.adapter.AreaAdapter$ViewHolder -> com.bde.light.a.d:
+    android.widget.TextView nameView -> a
+    android.widget.Button deleteBtn -> b
+    com.bde.light.adapter.AreaAdapter this$0 -> c
+com.bde.light.adapter.DeviceAdapter -> com.bde.light.a.e:
+    java.util.ArrayList list -> b
+    android.os.Handler mHandler -> c
+    android.content.Context context -> d
+    android.widget.ListView mListView -> a
+    int getCount() -> getCount
+    com.bde.light.model.Light getItem(int) -> a
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    void setListView(android.widget.ListView) -> a
+    void updateView(int) -> b
+    java.lang.Object getItem(int) -> getItem
+    android.os.Handler access$1(com.bde.light.adapter.DeviceAdapter) -> a
+    java.util.ArrayList access$2(com.bde.light.adapter.DeviceAdapter) -> b
+com.bde.light.adapter.DeviceAdapter$1 -> com.bde.light.a.f:
+    com.bde.light.adapter.DeviceAdapter this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.bde.light.adapter.DeviceAdapter$2 -> com.bde.light.a.g:
+    com.bde.light.adapter.DeviceAdapter this$0 -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.bde.light.adapter.DeviceAdapter$ViewHolder -> com.bde.light.a.h:
+    android.widget.ImageView iv_picture -> a
+    android.widget.TextView tv_lightName -> b
+    android.widget.TextView tv_areas -> c
+    android.widget.ImageView iv_signal -> d
+    android.widget.ImageView iv_isFound -> e
+    android.widget.Button btn_delete -> f
+    android.widget.Button btn_brightness -> g
+    android.widget.Button btn_window -> h
+    android.widget.ImageView timerIcon -> i
+    com.bde.light.adapter.DeviceAdapter this$0 -> j
+com.bde.light.adapter.DeviceManagerAdapter -> com.bde.light.a.i:
+    android.content.Context context -> a
+    java.util.ArrayList list -> b
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.bde.light.adapter.DeviceManagerAdapter$ViewHolder -> com.bde.light.a.j:
+    android.widget.TextView tv_name -> a
+    com.bde.light.adapter.DeviceManagerAdapter this$0 -> b
+com.bde.light.adapter.DeviceSettingAdapter -> com.bde.light.a.k:
+    java.util.ArrayList list -> a
+    android.content.Context context -> b
+    int getCount() -> getCount
+    com.bde.light.model.Light getItem(int) -> a
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    java.lang.Object getItem(int) -> getItem
+com.bde.light.adapter.DeviceSettingAdapter$ViewHolder -> com.bde.light.a.l:
+    android.widget.ImageView iv_picture -> a
+    android.widget.TextView tv_lightName -> b
+    android.widget.TextView tv_areas -> c
+    android.widget.ImageView iv_signal -> d
+    android.widget.ImageView iv_isFound -> e
+    com.bde.light.adapter.DeviceSettingAdapter this$0 -> f
+com.bde.light.adapter.LanguageAdapter -> com.bde.light.a.m:
+    java.util.ArrayList list -> a
+    android.content.Context context -> b
+    int getCount() -> getCount
+    java.util.HashMap getItem(int) -> a
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    java.lang.Object getItem(int) -> getItem
+com.bde.light.adapter.LanguageAdapter$ViewHolder -> com.bde.light.a.n:
+    android.widget.TextView nameView -> a
+    android.widget.ImageView selectedView -> b
+    com.bde.light.adapter.LanguageAdapter this$0 -> c
+com.bde.light.adapter.SettingAdapter -> com.bde.light.a.o:
+    java.util.ArrayList list -> a
+    android.content.Context context -> b
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.bde.light.adapter.SettingAdapter$ViewHolder -> com.bde.light.a.p:
+    android.widget.TextView nameView -> a
+    com.bde.light.adapter.SettingAdapter this$0 -> b
+com.bde.light.adapter.TimerAdapter -> com.bde.light.a.q:
+    java.util.ArrayList list -> a
+    android.content.Context context -> b
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.bde.light.adapter.TimerAdapter$ViewHolder -> com.bde.light.a.r:
+    android.widget.TextView tv_name -> a
+    android.widget.TextView tv_time -> b
+    android.widget.TextView tv_operation -> c
+    com.bde.light.adapter.TimerAdapter this$0 -> d
+com.bde.light.adapter.UpdateAreaAdapter -> com.bde.light.a.s:
+    java.util.ArrayList list -> a
+    android.content.Context context -> b
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.bde.light.adapter.UpdateAreaAdapter$ViewHolder -> com.bde.light.a.t:
+    android.widget.TextView tv_area -> a
+    android.widget.ImageView iv_selected -> b
+    com.bde.light.adapter.UpdateAreaAdapter this$0 -> c
+com.bde.light.db.AreaHelper -> com.bde.light.b.a:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.bde.light.db.LightHelper -> com.bde.light.b.b:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.bde.light.db.TimerHelper -> com.bde.light.b.c:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+com.bde.light.fragment.BaseFragment -> com.bde.light.c.a:
+    com.bde.light.fragment.BaseFragment$Operation mOperation -> a
+    com.bde.light.fragment.BaseFragment$Operation getOperation() -> a
+com.bde.light.fragment.BaseFragment$Operation -> com.bde.light.c.b:
+    void sendOperation(byte[],int) -> a
+com.bde.light.fragment.EndInitializeFragment -> com.bde.light.c.c:
+    android.widget.Button upBtn -> a
+    android.widget.Button downBtn -> b
+    android.widget.Button endtBtn -> c
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    void onStart() -> onStart
+com.bde.light.fragment.EndInitializeFragment$1 -> com.bde.light.c.d:
+    com.bde.light.fragment.EndInitializeFragment this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.fragment.EndInitializeFragment$2 -> com.bde.light.c.e:
+    com.bde.light.fragment.EndInitializeFragment this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.fragment.EndInitializeFragment$3 -> com.bde.light.c.f:
+    com.bde.light.fragment.EndInitializeFragment this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.fragment.StartInitializeFragment -> com.bde.light.c.g:
+    android.widget.Button upBtn -> a
+    android.widget.Button downBtn -> b
+    android.widget.Button startBtn -> c
+    android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    void onStart() -> onStart
+com.bde.light.fragment.StartInitializeFragment$1 -> com.bde.light.c.h:
+    com.bde.light.fragment.StartInitializeFragment this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.fragment.StartInitializeFragment$2 -> com.bde.light.c.i:
+    com.bde.light.fragment.StartInitializeFragment this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.fragment.StartInitializeFragment$3 -> com.bde.light.c.j:
+    com.bde.light.fragment.StartInitializeFragment this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.bde.light.mgr.AreaMgr -> com.bde.light.d.a:
+    com.bde.light.db.AreaHelper helper -> a
+    android.content.ContentValues getValues(com.bde.light.model.Area) -> a
+    long add(com.bde.light.model.Area) -> b
+    java.util.ArrayList findAll() -> a
+    com.bde.light.model.Area findByName(java.lang.String) -> a
+    int update(com.bde.light.model.Area) -> c
+    int delete(com.bde.light.model.Area) -> d
+com.bde.light.mgr.LightMgr -> com.bde.light.d.b:
+    com.bde.light.db.LightHelper helper -> a
+    android.content.ContentValues getValues(com.bde.light.model.Light) -> a
+    long add(com.bde.light.model.Light) -> b
+    java.util.ArrayList findAll() -> a
+    java.util.ArrayList findAllByArea(java.lang.String) -> a
+    com.bde.light.model.Light findByAddress(java.lang.String) -> b
+    int update(com.bde.light.model.Light) -> c
+    int delete(java.lang.String) -> c
+    int deleteAllByArea(java.lang.String) -> d
+    int deleteAll() -> b
+com.bde.light.mgr.TimerMgr -> com.bde.light.d.c:
+    com.bde.light.db.TimerHelper helper -> a
+    android.content.Context mContext -> b
+    java.lang.String TAG -> c
+    android.content.ContentValues getValues(com.bde.light.model.Timer) -> a
+    long add(com.bde.light.model.Timer) -> b
+    java.util.ArrayList findAll() -> a
+    java.util.ArrayList findAllByAddress(java.lang.String) -> a
+    int update(com.bde.light.model.Timer) -> c
+    int delete(com.bde.light.model.Timer) -> d
+com.bde.light.model.Area -> com.bde.light.e.a:
+    int id -> a
+    java.lang.String area -> b
+    int selected -> c
+com.bde.light.model.Light -> com.bde.light.e.b:
+    int id -> a
+    java.lang.String name -> b
+    java.lang.String password -> c
+    java.lang.String address -> d
+    java.lang.String area -> e
+    int picture -> f
+    int type -> g
+    int state -> h
+    int version -> i
+    int signal -> j
+    int isFound -> k
+    int isValidate -> l
+    int shake_open -> m
+    int shake_close -> n
+    int close_open -> o
+    int close_close -> p
+    int remote_open -> q
+    int remote_close -> r
+    int timer_open -> s
+    int timer_close -> t
+    int rssi -> u
+    int oldState -> v
+    int brightness -> w
+    int brightnessChangeable -> x
+    boolean isCheckThisTime -> y
+    int searchTimes -> z
+    int distance -> A
+    int lastSignal -> B
+    boolean closable -> C
+    boolean isOperationDone -> D
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+com.bde.light.model.Timer -> com.bde.light.e.c:
+    long id -> a
+    java.lang.String index -> b
+    java.lang.String name -> c
+    java.lang.String time -> d
+    java.lang.String operation -> e
+    java.lang.String lightAddress -> f
+    com.bde.light.model.Light light -> g
+    byte[] addTimer(int,int) -> a
+    byte[] modifyTimer(int,int,int) -> a
+    byte[] deleteTimer(int) -> a
+com.bde.light.myview.DragSortController -> com.bde.light.myview.a:
+    int mDragInitMode -> a
+    boolean mSortEnabled -> b
+    int mRemoveMode -> c
+    boolean mRemoveEnabled -> d
+    boolean mIsRemoving -> e
+    android.view.GestureDetector mDetector -> f
+    android.view.GestureDetector mFlingRemoveDetector -> g
+    int mTouchSlop -> h
+    int mHitPos -> i
+    int mFlingHitPos -> j
+    int mClickRemoveHitPos -> k
+    int[] mTempLoc -> l
+    int mItemX -> m
+    int mItemY -> n
+    int mCurrX -> o
+    int mCurrY -> p
+    boolean mDragging -> q
+    float mFlingSpeed -> r
+    int mDragHandleId -> s
+    int mClickRemoveId -> t
+    int mFlingHandleId -> u
+    boolean mCanDrag -> v
+    com.bde.light.myview.DragSortListView mDslv -> w
+    int mPositionX -> x
+    android.view.GestureDetector$OnGestureListener mFlingRemoveListener -> y
+    void setDragInitMode(int) -> a
+    void setSortEnabled(boolean) -> a
+    void setRemoveMode(int) -> b
+    void setRemoveEnabled(boolean) -> b
+    boolean startDrag(int,int,int) -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    void onDragFloatView(android.view.View,android.graphics.Point,android.graphics.Point) -> a
+    int startDragPosition(android.view.MotionEvent) -> a
+    int startFlingPosition(android.view.MotionEvent) -> b
+    int dragHandleHitPosition(android.view.MotionEvent) -> c
+    int flingHandleHitPosition(android.view.MotionEvent) -> d
+    int viewIdHitPosition(android.view.MotionEvent,int) -> a
+    boolean onDown(android.view.MotionEvent) -> onDown
+    boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onScroll
+    void onLongPress(android.view.MotionEvent) -> onLongPress
+    boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+    boolean onSingleTapUp(android.view.MotionEvent) -> onSingleTapUp
+    void onShowPress(android.view.MotionEvent) -> onShowPress
+    boolean access$0(com.bde.light.myview.DragSortController) -> a
+    boolean access$1(com.bde.light.myview.DragSortController) -> b
+    com.bde.light.myview.DragSortListView access$2(com.bde.light.myview.DragSortController) -> c
+    float access$3(com.bde.light.myview.DragSortController) -> d
+    int access$4(com.bde.light.myview.DragSortController) -> e
+    void access$5(com.bde.light.myview.DragSortController,boolean) -> a
+com.bde.light.myview.DragSortController$1 -> com.bde.light.myview.b:
+    com.bde.light.myview.DragSortController this$0 -> a
+    boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float) -> onFling
+com.bde.light.myview.DragSortItemView -> com.bde.light.myview.c:
+    int mGravity -> a
+    void setGravity(int) -> setGravity
+    int getGravity() -> getGravity
+    void onLayout(boolean,int,int,int,int) -> onLayout
+    void onMeasure(int,int) -> onMeasure
+com.bde.light.myview.DragSortItemViewCheckable -> com.bde.light.myview.d:
+    boolean isChecked() -> isChecked
+    void setChecked(boolean) -> setChecked
+    void toggle() -> toggle
+com.bde.light.myview.DragSortListView -> com.bde.light.myview.DragSortListView:
+    android.view.View mFloatView -> a
+    android.graphics.Point mFloatLoc -> b
+    android.graphics.Point mTouchLoc -> c
+    int mFloatViewMid -> d
+    boolean mFloatViewOnMeasured -> e
+    android.database.DataSetObserver mObserver -> f
+    float mFloatAlpha -> g
+    float mCurrFloatAlpha -> h
+    int mFloatPos -> i
+    int mFirstExpPos -> j
+    int mSecondExpPos -> k
+    boolean mAnimate -> l
+    int mSrcPos -> m
+    int mDragDeltaX -> n
+    int mDragDeltaY -> o
+    int mOffsetX -> p
+    int mOffsetY -> q
+    com.bde.light.myview.DragSortListView$DragListener mDragListener -> r
+    com.bde.light.myview.DragSortListView$DropListener mDropListener -> s
+    com.bde.light.myview.DragSortListView$RemoveListener mRemoveListener -> t
+    boolean mDragEnabled -> u
+    int mDragState -> v
+    int mItemHeightCollapsed -> w
+    int mFloatViewHeight -> x
+    int mFloatViewHeightHalf -> y
+    int mWidthMeasureSpec -> z
+    android.view.View[] mSampleViewTypes -> A
+    com.bde.light.myview.DragSortListView$DragScroller mDragScroller -> B
+    float mDragUpScrollStartFrac -> C
+    float mDragDownScrollStartFrac -> D
+    int mUpScrollStartY -> E
+    int mDownScrollStartY -> F
+    float mDownScrollStartYF -> G
+    float mUpScrollStartYF -> H
+    float mDragUpScrollHeight -> I
+    float mDragDownScrollHeight -> J
+    float mMaxScrollSpeed -> K
+    com.bde.light.myview.DragSortListView$DragScrollProfile mScrollProfile -> L
+    int mX -> M
+    int mY -> N
+    int mLastX -> O
+    int mLastY -> P
+    int mDragStartY -> Q
+    int mDragFlags -> R
+    boolean mLastCallWasIntercept -> S
+    boolean mInTouchEvent -> T
+    com.bde.light.myview.DragSortListView$FloatViewManager mFloatViewManager -> U
+    android.view.MotionEvent mCancelEvent -> V
+    int mCancelMethod -> W
+    float mSlideRegionFrac -> Z
+    float mSlideFrac -> aa
+    com.bde.light.myview.DragSortListView$AdapterWrapper mAdapterWrapper -> ab
+    boolean mTrackDragSort -> ac
+    com.bde.light.myview.DragSortListView$DragSortTracker mDragSortTracker -> ad
+    boolean mBlockLayoutRequests -> ae
+    boolean mIgnoreTouchEvent -> af
+    com.bde.light.myview.DragSortListView$HeightCache mChildHeightCache -> ag
+    com.bde.light.myview.DragSortListView$RemoveAnimator mRemoveAnimator -> ah
+    com.bde.light.myview.DragSortListView$LiftAnimator mLiftAnimator -> ai
+    com.bde.light.myview.DragSortListView$DropAnimator mDropAnimator -> aj
+    boolean mUseRemoveVelocity -> ak
+    float mRemoveVelocityX -> al
+    boolean mListViewIntercepted -> am
+    boolean mFloatViewInvalidated -> an
+    void setFloatAlpha(float) -> setFloatAlpha
+    float getFloatAlpha() -> getFloatAlpha
+    void setMaxScrollSpeed(float) -> setMaxScrollSpeed
+    void setAdapter(android.widget.ListAdapter) -> setAdapter
+    android.widget.ListAdapter getInputAdapter() -> getInputAdapter
+    void drawDivider(int,android.graphics.Canvas) -> a
+    void dispatchDraw(android.graphics.Canvas) -> dispatchDraw
+    int getItemHeight(int) -> b
+    int getShuffleEdge(int,int) -> a
+    boolean updatePositions() -> d
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void removeItem(int) -> a
+    void removeItem(int,float) -> a
+    void cancelDrag() -> a
+    void clearPositions() -> e
+    void dropFloatView() -> f
+    void doRemoveItem() -> g
+    void doRemoveItem(int) -> c
+    void adjustOnReorder() -> h
+    boolean stopDrag(boolean) -> a
+    boolean stopDragWithVelocity(boolean,float) -> a
+    boolean stopDrag(boolean,float) -> b
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void doActionUpOrCancel() -> i
+    void saveTouchCoords(android.view.MotionEvent) -> b
+    boolean listViewIntercepted() -> b
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+    void setDragScrollStart(float) -> setDragScrollStart
+    void setDragScrollStarts(float,float) -> a
+    void continueDrag(int,int) -> b
+    void updateScrollStarts() -> j
+    void onSizeChanged(int,int,int,int) -> onSizeChanged
+    void adjustAllItems() -> k
+    void adjustItem(int,android.view.View,boolean) -> a
+    int getChildHeight(int) -> d
+    int getChildHeight(int,android.view.View,boolean) -> b
+    int calcItemHeight(int,android.view.View,boolean) -> c
+    int calcItemHeight(int,int) -> c
+    void requestLayout() -> requestLayout
+    int adjustScroll(int,android.view.View,int,int) -> a
+    void measureItem(android.view.View) -> a
+    void measureFloatView() -> l
+    void onMeasure(int,int) -> onMeasure
+    void layoutChildren() -> layoutChildren
+    boolean onDragTouchEvent(android.view.MotionEvent) -> a
+    boolean startDrag(int,int,int,int) -> a
+    boolean startDrag(int,android.view.View,int,int,int) -> a
+    void doDragFloatView(boolean) -> b
+    void doDragFloatView(int,android.view.View,boolean) -> d
+    void updateFloatView() -> m
+    void destroyFloatView() -> n
+    void setFloatViewManager(com.bde.light.myview.DragSortListView$FloatViewManager) -> setFloatViewManager
+    void setDragListener(com.bde.light.myview.DragSortListView$DragListener) -> setDragListener
+    void setDragEnabled(boolean) -> setDragEnabled
+    boolean isDragEnabled() -> c
+    void setDropListener(com.bde.light.myview.DragSortListView$DropListener) -> setDropListener
+    void setRemoveListener(com.bde.light.myview.DragSortListView$RemoveListener) -> setRemoveListener
+    void setDragSortListener(com.bde.light.myview.DragSortListView$DragSortListener) -> setDragSortListener
+    void setDragScrollProfile(com.bde.light.myview.DragSortListView$DragScrollProfile) -> setDragScrollProfile
+    float access$0(com.bde.light.myview.DragSortListView) -> a
+    void access$1(com.bde.light.myview.DragSortListView,int,android.view.View,boolean) -> a
+    int access$2(com.bde.light.myview.DragSortListView) -> b
+    int access$3(com.bde.light.myview.DragSortListView) -> c
+    int access$4(com.bde.light.myview.DragSortListView) -> d
+    void access$5(com.bde.light.myview.DragSortListView,int) -> a
+    android.graphics.Point access$6(com.bde.light.myview.DragSortListView) -> e
+    int access$7(com.bde.light.myview.DragSortListView) -> f
+    void access$8(com.bde.light.myview.DragSortListView,boolean) -> a
+    int access$9(com.bde.light.myview.DragSortListView) -> g
+    int access$10(com.bde.light.myview.DragSortListView) -> h
+    void access$11(com.bde.light.myview.DragSortListView,int) -> b
+    int access$12(com.bde.light.myview.DragSortListView) -> i
+    int access$13(com.bde.light.myview.DragSortListView) -> j
+    void access$14(com.bde.light.myview.DragSortListView) -> k
+    int access$15(com.bde.light.myview.DragSortListView) -> l
+    int access$16(com.bde.light.myview.DragSortListView) -> m
+    boolean access$17(com.bde.light.myview.DragSortListView) -> n
+    float access$18(com.bde.light.myview.DragSortListView) -> o
+    void access$19(com.bde.light.myview.DragSortListView,float) -> a
+    void access$20(com.bde.light.myview.DragSortListView) -> p
+    int access$21(com.bde.light.myview.DragSortListView,int,android.view.View,boolean) -> b
+    void access$22(com.bde.light.myview.DragSortListView) -> q
+    int access$23(com.bde.light.myview.DragSortListView) -> r
+    com.bde.light.myview.DragSortListView$DragScrollProfile access$24(com.bde.light.myview.DragSortListView) -> s
+    float access$25(com.bde.light.myview.DragSortListView) -> t
+    float access$26(com.bde.light.myview.DragSortListView) -> u
+    float access$27(com.bde.light.myview.DragSortListView) -> v
+    float access$28(com.bde.light.myview.DragSortListView) -> w
+    void access$29(com.bde.light.myview.DragSortListView,boolean) -> b
+    void access$30(com.bde.light.myview.DragSortListView,int,android.view.View,boolean) -> c
+    int access$31(com.bde.light.myview.DragSortListView,int) -> c
+    int access$32(com.bde.light.myview.DragSortListView,int) -> d
+    int access$33(com.bde.light.myview.DragSortListView) -> x
+    int access$34(com.bde.light.myview.DragSortListView,int,int) -> a
+com.bde.light.myview.DragSortListView$1 -> com.bde.light.myview.e:
+    com.bde.light.myview.DragSortListView this$0 -> a
+    float getSpeed(float,long) -> a
+com.bde.light.myview.DragSortListView$2 -> com.bde.light.myview.f:
+    com.bde.light.myview.DragSortListView this$0 -> a
+    void cancel() -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+com.bde.light.myview.DragSortListView$AdapterWrapper -> com.bde.light.myview.g:
+    android.widget.ListAdapter mAdapter -> b
+    com.bde.light.myview.DragSortListView this$0 -> a
+    android.widget.ListAdapter getAdapter() -> a
+    long getItemId(int) -> getItemId
+    java.lang.Object getItem(int) -> getItem
+    int getCount() -> getCount
+    boolean areAllItemsEnabled() -> areAllItemsEnabled
+    boolean isEnabled(int) -> isEnabled
+    int getItemViewType(int) -> getItemViewType
+    int getViewTypeCount() -> getViewTypeCount
+    boolean hasStableIds() -> hasStableIds
+    boolean isEmpty() -> isEmpty
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.bde.light.myview.DragSortListView$AdapterWrapper$1 -> com.bde.light.myview.h:
+    com.bde.light.myview.DragSortListView$AdapterWrapper this$1 -> a
+    void onChanged() -> onChanged
+    void onInvalidated() -> onInvalidated
+com.bde.light.myview.DragSortListView$DragListener -> com.bde.light.myview.i:
+    void drag(int,int) -> a
+com.bde.light.myview.DragSortListView$DragScrollProfile -> com.bde.light.myview.j:
+    float getSpeed(float,long) -> a
+com.bde.light.myview.DragSortListView$DragScroller -> com.bde.light.myview.k:
+    boolean mAbort -> b
+    long mPrevTime -> c
+    long mCurrTime -> d
+    int dy -> e
+    float dt -> f
+    long tStart -> g
+    int scrollDir -> h
+    float mScrollSpeed -> i
+    boolean mScrolling -> j
+    com.bde.light.myview.DragSortListView this$0 -> a
+    boolean isScrolling() -> a
+    int getScrollDir() -> b
+    void startScrolling(int) -> a
+    void stopScrolling(boolean) -> a
+    void run() -> run
+com.bde.light.myview.DragSortListView$DragSortListener -> com.bde.light.myview.l:
+com.bde.light.myview.DragSortListView$DragSortTracker -> com.bde.light.myview.m:
+    java.lang.StringBuilder mBuilder -> a
+    java.io.File mFile -> b
+    int mNumInBuffer -> d
+    int mNumFlushes -> e
+    boolean mTracking -> f
+    com.bde.light.myview.DragSortListView this$0 -> c
+    void startTracking() -> a
+    void appendState() -> b
+    void flush() -> c
+    void stopTracking() -> d
+com.bde.light.myview.DragSortListView$DropAnimator -> com.bde.light.myview.n:
+    int mDropPos -> d
+    int srcPos -> e
+    float mInitDeltaY -> f
+    float mInitDeltaX -> g
+    com.bde.light.myview.DragSortListView this$0 -> a
+    void onStart() -> a
+    int getTargetY() -> e
+    void onUpdate(float,float) -> a
+    void onStop() -> b
+com.bde.light.myview.DragSortListView$DropListener -> com.bde.light.myview.o:
+    void drop(int,int) -> a_
+com.bde.light.myview.DragSortListView$FloatViewManager -> com.bde.light.myview.p:
+    android.view.View onCreateFloatView(int) -> c
+    void onDragFloatView(android.view.View,android.graphics.Point,android.graphics.Point) -> a
+    void onDestroyFloatView(android.view.View) -> a
+com.bde.light.myview.DragSortListView$HeightCache -> com.bde.light.myview.q:
+    android.util.SparseIntArray mMap -> b
+    java.util.ArrayList mOrder -> c
+    int mMaxSize -> d
+    com.bde.light.myview.DragSortListView this$0 -> a
+    void add(int,int) -> a
+    int get(int) -> a
+    void clear() -> a
+com.bde.light.myview.DragSortListView$LiftAnimator -> com.bde.light.myview.r:
+    float mInitDragDeltaY -> d
+    float mFinalDragDeltaY -> e
+    com.bde.light.myview.DragSortListView this$0 -> a
+    void onStart() -> a
+    void onUpdate(float,float) -> a
+com.bde.light.myview.DragSortListView$RemoveAnimator -> com.bde.light.myview.s:
+    float mFloatLocX -> d
+    float mFirstStartBlank -> e
+    float mSecondStartBlank -> f
+    int mFirstChildHeight -> g
+    int mSecondChildHeight -> h
+    int mFirstPos -> i
+    int mSecondPos -> j
+    int srcPos -> k
+    com.bde.light.myview.DragSortListView this$0 -> a
+    void onStart() -> a
+    void onUpdate(float,float) -> a
+    void onStop() -> b
+com.bde.light.myview.DragSortListView$RemoveListener -> com.bde.light.myview.t:
+    void remove(int) -> a
+com.bde.light.myview.DragSortListView$SmoothAnimator -> com.bde.light.myview.u:
+    long mStartTime -> b
+    float mDurationF -> a
+    float mAlpha -> d
+    float mA -> e
+    float mB -> f
+    float mC -> g
+    float mD -> h
+    boolean mCanceled -> i
+    com.bde.light.myview.DragSortListView this$0 -> c
+    float transform(float) -> a
+    void start() -> c
+    void cancel() -> d
+    void onStart() -> a
+    void onUpdate(float,float) -> a
+    void onStop() -> b
+    void run() -> run
+com.bde.light.myview.SimpleFloatViewManager -> com.bde.light.myview.v:
+    android.graphics.Bitmap mFloatBitmap -> a
+    android.widget.ImageView mImageView -> b
+    int mFloatBGColor -> c
+    android.widget.ListView mListView -> d
+    void setBackgroundColor(int) -> d
+    android.view.View onCreateFloatView(int) -> c
+    void onDragFloatView(android.view.View,android.graphics.Point,android.graphics.Point) -> a
+    void onDestroyFloatView(android.view.View) -> a
+com.bde.light.service.BleService -> com.bde.light.service.BleService:
+    java.util.UUID MYUUID -> a
+    java.util.UUID MYPASSWORDCHARACTERISTIC -> b
+    java.util.UUID CCC -> c
+    java.util.UUID MY_UPDATE_NAME_OR_INIT_PASSWORD_CHARACTERISTIC -> d
+    java.util.UUID MY_UPDATE_PASSWORD_CHARACTERISTIC -> e
+    java.util.UUID MY_TIMER_CHARACTERISTIC -> f
+    android.bluetooth.BluetoothAdapter mBtAdapter -> h
+    android.bluetooth.BluetoothGatt mBluetoothGatt -> g
+    android.os.Handler mDeviceListHandler -> i
+    android.os.Handler mActivityHandler -> j
+    android.os.Handler mTimerHandler -> k
+    java.util.HashMap avgRssi -> l
+    java.lang.String mBluetoothDeviceAddress -> m
+    com.bde.light.model.Light myLight -> n
+    int operation -> o
+    byte[] timerData -> p
+    android.os.IBinder binder -> q
+    android.bluetooth.BluetoothGattCallback mGattCallbacks -> r
+    android.bluetooth.BluetoothAdapter$LeScanCallback mScanCallback -> s
+    byte[] getTimerData() -> a
+    void setTimerData(byte[]) -> a
+    int getOperation() -> b
+    void setOperation(int) -> a
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    boolean onUnbind(android.content.Intent) -> onUnbind
+    void onCreate() -> onCreate
+    void setActivityHandler(android.os.Handler) -> a
+    void setDeviceListHandler(android.os.Handler) -> b
+    void setTimerHandler(android.os.Handler) -> c
+    com.bde.light.model.Light getMyLight() -> c
+    void setMyLight(com.bde.light.model.Light) -> a
+    void onDestroy() -> onDestroy
+    android.bluetooth.BluetoothGattCharacteristic getBluetoothGattCharacteristic(java.util.UUID) -> a
+    boolean enableNotification(android.bluetooth.BluetoothGattCharacteristic,boolean) -> a
+    boolean write(byte[],java.util.UUID) -> a
+    com.bde.light.model.Light selectDevice(byte[],android.bluetooth.BluetoothDevice,int) -> a
+    int average(java.util.Queue) -> a
+    void sendMessage(com.bde.light.model.Light,int) -> a
+    boolean connect(android.bluetooth.BluetoothDevice,boolean) -> a
+    void close() -> d
+    boolean connect(java.lang.String) -> a
+    void disconnect() -> e
+    void scan(boolean) -> a
+    void setBrightness(byte) -> a
+    void updateName(java.lang.String) -> b
+    android.os.Handler access$0(com.bde.light.service.BleService) -> a
+    android.os.Handler access$1(com.bde.light.service.BleService) -> b
+    com.bde.light.model.Light access$2(com.bde.light.service.BleService,byte[],android.bluetooth.BluetoothDevice,int) -> a
+com.bde.light.service.BleService$1 -> com.bde.light.service.a:
+    com.bde.light.service.BleService this$0 -> a
+    void onConnectionStateChange(android.bluetooth.BluetoothGatt,int,int) -> onConnectionStateChange
+    void onServicesDiscovered(android.bluetooth.BluetoothGatt,int) -> onServicesDiscovered
+    void onCharacteristicRead(android.bluetooth.BluetoothGatt,android.bluetooth.BluetoothGattCharacteristic,int) -> onCharacteristicRead
+    void onCharacteristicWrite(android.bluetooth.BluetoothGatt,android.bluetooth.BluetoothGattCharacteristic,int) -> onCharacteristicWrite
+    void onCharacteristicChanged(android.bluetooth.BluetoothGatt,android.bluetooth.BluetoothGattCharacteristic) -> onCharacteristicChanged
+    void onDescriptorRead(android.bluetooth.BluetoothGatt,android.bluetooth.BluetoothGattDescriptor,int) -> onDescriptorRead
+    void onDescriptorWrite(android.bluetooth.BluetoothGatt,android.bluetooth.BluetoothGattDescriptor,int) -> onDescriptorWrite
+    com.bde.light.service.BleService access$0(com.bde.light.service.BleService$1) -> a
+com.bde.light.service.BleService$1$1 -> com.bde.light.service.b:
+    com.bde.light.service.BleService$1 this$1 -> a
+    void run() -> run
+com.bde.light.service.BleService$2 -> com.bde.light.service.c:
+    com.bde.light.service.BleService this$0 -> a
+    void onLeScan(android.bluetooth.BluetoothDevice,int,byte[]) -> onLeScan
+com.bde.light.service.BleService$LocalBinder -> com.bde.light.service.d:
+    com.bde.light.service.BleService this$0 -> a
+    com.bde.light.service.BleService getService() -> a
+com.bde.light.utils.MyActivityUtils -> com.bde.light.f.a:
+    void toast(android.content.Context,int) -> a
+    android.app.AlertDialog makeAlertDialog(android.content.Context,int,int,int,android.content.DialogInterface$OnClickListener,int,android.content.DialogInterface$OnClickListener) -> a
+com.bde.light.utils.NumConversion -> com.bde.light.f.b:
+    byte[] stringToBytes(java.lang.String,byte[]) -> a
+    byte[] int2LittleEndianByteArray16(int) -> a
+com.util.SlipButton -> com.util.SlipButton:
+    boolean NowChoose -> a
+    boolean isChecked -> b
+    boolean OnSlip -> c
+    float DownX -> d
+    float NowX -> e
+    android.graphics.Rect Btn_On -> f
+    android.graphics.Rect Btn_Off -> g
+    boolean isChgLsnOn -> h
+    com.util.SlipButton$OnChangedListener ChgLsn -> i
+    android.graphics.Bitmap bg_on -> j
+    android.graphics.Bitmap bg_off -> k
+    android.graphics.Bitmap slip_btn -> l
+    void init() -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    void SetOnChangedListener(com.util.SlipButton$OnChangedListener) -> a
+    void setCheck(boolean) -> setCheck
+com.util.SlipButton$OnChangedListener -> com.util.a:
+    void OnChanged(boolean) -> a

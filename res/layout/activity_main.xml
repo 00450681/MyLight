@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2" >
+    
+    <RelativeLayout
+        android:layout_height="60dp"
+        android:layout_width="fill_parent"
+        android:background="@drawable/title_selector"
+        >
+	    <RelativeLayout 
+	        android:id="@id/title_layout"
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        >
+	        <TextView
+		        android:id="@id/title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/all"   
+		        android:textSize="30sp"
+		        android:textColor="@color/white"
+		    	/>
+		    <ImageView
+		        android:id="@id/arrows"
+		        android:layout_width="wrap_content"
+		        android:layout_height="30dip"
+		        android:src="@drawable/icon_down"
+		        android:layout_toRightOf="@id/title"
+				android:layout_alignBottom="@id/title"
+				android:layout_marginLeft="5dip"
+		        />
+		    
+	    </RelativeLayout>
+	        
+	    <ImageView
+	        android:id="@+id/sort_btn"  
+		    android:layout_width="60dp"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/sort"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="20dp"
+		    />
+        
+    </RelativeLayout>
+    
+    
+    <ListView 
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:dividerHeight="1dp"
+        android:background="@drawable/corner_textview"
+        />
+
+    <TextView
+        android:id="@+id/no_device"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/corner_textview"
+        android:gravity="center"
+        android:text="@string/no_device"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="visible" />
+    
+    <ListView 
+	    android:id="@+id/arealist"
+	    android:layout_width="250dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="60dp"
+		android:layout_centerHorizontal="true"
+		android:dividerHeight="1dp"
+        android:background="#555577"
+        android:visibility="gone"
+	    />
+    <!-- <GridView 
+        android:id="@id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombar"
+        android:columnWidth="70dp"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="10dp"
+        > -->
+        <GridView 
+        android:id="@id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombar"
+        android:columnWidth="70dp"
+        android:numColumns="4"
+        android:horizontalSpacing="10dp"
+        >
+        
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/dialogLayout"
+	    android:layout_width="200dp"
+	    android:layout_height="150dp"
+	    android:background="@color/black"
+	    android:layout_centerInParent="true"
+	    android:visibility="gone" >
+
+    <Button
+        android:id="@+id/cancleButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/cancel" />
+    
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pleaseWait"
+        android:layout_centerHorizontal="true"
+        
+        android:layout_margin="10dp"
+        android:layout_above="@id/cancleButton" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/progressText"
+         />
+
+	</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/brightnessLayout"
+        android:layout_width="250dp"
+	    android:layout_height="200dp"
+        android:background="@color/black"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <SeekBar
+            android:id="@+id/brightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:max="99"
+            android:progress="0"
+            android:layout_margin="20dp" />
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brightness"
+            android:layout_centerHorizontal="true"
+            android:text="@string/cancel" />
+    </RelativeLayout>
+
+</RelativeLayout>

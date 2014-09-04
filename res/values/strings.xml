@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">亮精灵智慧家居 1.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="all">全部</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="add_success">添加成功</string>
+    <string name="update_success">修改成功</string>
+    
+    <string name="update_failed">修改失败</string>
+    <string name="init_success">初始化成功</string>
+    <string name="init_failed">初始化失败</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+    <string name="on_off_success">操作成功</string>
+    <string name="tip">提示</string>
+    <string name="setting">设置</string>
+    <string name="timeout">超时失败</string>
+    <string name="pleaseWait">请稍候</string>
+    <string name="no_device">没有设备</string>
+    <string name="invalidate_pwd">新密码不正确或两次输入不相等</string>
+    <string name="invalidate_oldpwd">旧密码错误或为空</string>
+    <string name="dbFail">存储失败</string>
+    <string name="areaExsit">区域已存在</string>
+    <string name="initPwdFail">初始密码错误</string>
+    <string name="operating">正在操作中</string>
+    <string name="brightnessControl">亮度调节</string>
+    <string name="windowControl">窗帘控制</string>
+    <string name="success">操作成功</string>
+    <string name="failed">操作失败</string>
+    <string name="change_range">修改</string>
+
+    <!-- MainActivity.class -->
+	<string name="all_on">全开</string>
+	<string name="all_off">全关</string>
+	<string name="timer">定时器</string>
+	<string name="title">请输入6位数字密码</string>
+	<string name="validate_success">验证成功</string>
+	<string name="validate_failed">验证失败</string>
+	<string name="password_empty">密码不能为空</string>
+	<string name="version_not_equal">由于密码改变了，请重新输入密码</string>
+	
+	<string name="invalid_area">区域无效</string>
+	<string name="how_to_add_area">请选择有效区域或者进入设置->区域管理添加区域选项</string>
+	
+	<!-- SettingActivity.class -->
+	<string name="home">主页</string>
+	<string name="menu">设置菜单</string>
+	<string name="area_manager">区域管理</string>
+	<string name="device_manager">设备管理</string>
+	<string name="language_manager">语言设置</string>
+	<string name="area_management">区域管理</string>
+	<string name="device_management">设备管理</string>
+	<string name="language_management">语言设置</string>
+	
+	<!-- LanguageActivity.class -->
+	<string name="chinese">中文</string>
+	<string name="english">英文</string>
+	
+	<!-- validate_dialog.xml -->
+	<string name="password">产品密码</string>
+	<string name="name">名字</string>
+	<string name="area">区域</string>
+	
+	<!-- area_activity.xml -->
+	<string name="add">添加</string>
+	<string name="delete">删除</string>
+	<string name="input_area">添加区域</string>
+	<string name="delete_or_not">是否删除所有区域</string>
+	<string name="no_area">没有区域可删除</string>
+	
+	<string name="warrningTitle">注意</string>
+	<string name="warrningMessage">确认删除？此区域的所有设备都将被删除！</string>
+	
+	<!-- device_manager_activity -->
+	<string name="update_name">名字</string>
+	<string name="update_area">区域</string>
+	<string name="update_password">重设密码</string>
+	<string name="init_password">初始化密码</string>
+	<string name="control_light">亮度可调模式</string>
+	<string name="adjustments">微调</string>
+	<string name="range">量程</string>
+	<string name="endAdjustments">停止微调</string>
+	<string name="adjustmentTime">微调步进时间</string>
+	<string name="adjustmentAndRange">微调与量程</string>
+	<string name="initialize">初始化设置</string>
+	
+	<string name="enter_info">点击初始化按钮开始窗帘的初始化设置</string>
+	<string name="start_info">点击控制按钮来调整到窗帘打开的位置，然后点击确定开始位置</string>
+	<string name="end_info">点击控制按钮来调整到窗帘关闭的位置，然后点击确定结束位置</string>
+	<string name="up">上</string>
+	<string name="down">下</string>
+	<string name="confirm_start">确定初始位置</string>
+	<string name="confirm_end">确定结束位置</string>
+	<string name="start_init">开始初始化</string>
+	
+	<!-- update_name_activity.xml -->
+	<string name="name_tip">包含中文则限制在6字符以内，否则限制在14字符以内</string>
+	
+	<!-- update_password_activity.xml -->
+	<string name="input_password">请输入6位数字密码</string>
+	<string name="old_password">旧密码</string>
+	<string name="new_password">新密码</string>
+	<string name="repeat_password">重复</string>
+	
+	<!-- item_device_control.xml -->
+	<string name="open">开启</string>
+	<string name="close">关闭</string>
+	
+	<!-- time_activity.xml -->
+	<string name="choose_device">请选择设备或动作</string>
+	<string name="operationNotSupport">动作被禁止</string>
+	<string name="click">点击</string>
+	<string name="action">动作</string>
+	<string name="save">保存</string>
+	<string name="no_timer">没有定时器</string>
+	<string name="over_time">请选择以后的时间</string>
+	
+</resources>

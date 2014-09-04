@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bde.light.activity"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+	
+	<uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/smart_home690"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+         >
+        <activity
+            android:name=".LaunchActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+        	android:configChanges="keyboardHidden|orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+        	android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".SettingActivity"
+            android:screenOrientation="portrait"
+        	android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".AreaActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".DeviceActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".LanguageActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize|locale"/>
+        <!--  android:configChanges="locale" -->
+        <activity android:name=".TimerActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".ValidateActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".DeviceManagerActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".UpdateNameActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".UpdateAreaActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".UpdatePasswordActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".InitPasswordActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".AdjustmentActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".InitializeActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".StartInitActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".EndInitActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".InitActivity"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name=".TimerDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service
+            android:name="com.bde.light.service.BleService"
+            android:enabled="true" />
+    </application>
+</manifest>

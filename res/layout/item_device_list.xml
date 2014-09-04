@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" >
+
+    <ImageView
+        android:id="@id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/light_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_areas" />
+
+            <TextView
+                android:id="@id/areas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/timerIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/timer_gray"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/brightnessBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bc"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/windowBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/mada2"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+    
+    <FrameLayout
+        android:id="@+id/signalLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" >
+
+        <ImageView
+            android:id="@id/signal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@id/is_found"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_style_six_normal"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+    <!--
+     android:scaleType="center"
+        android:src="@drawable/btn_style_six_normal"
+    -->
+
+</RelativeLayout>

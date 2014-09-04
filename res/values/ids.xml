@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- activity_main.xml -->
+    <item type="id" name="title_layout"/>
+    <item type="id" name="title"/>
+    <item type="id" name="arrows"/>
+    <item type="id" name="devices_list"/>
+    <item type="id" name="grid_view"/>
+    
+    <!-- area_activity.xml -->
+    <item type="id" name="add_area"/>
+    <item type="id" name="delete_area"/>
+    
+    <!-- timer_activity.xml -->
+    <item type="id" name="add_timer"/>
+    <item type="id" name="select_device" />
+    
+    <!-- item_grid_view.xml -->
+    <item type="id" name="grid_icon"/>
+    <item type="id" name="grid_title"/>
+    
+    <!-- item_area_layout.xml -->
+    <item type="id" name="area_name"/>
+    
+    <!-- item_language_layout.xml -->
+    <item type="id" name="language"/>
+    <item type="id" name="selected"/>
+    
+    <!-- item_setting_layout.xml -->
+    <item type="id" name="setting_option"/>
+    
+    <!-- item_device_list.xml -->
+    <item type="id" name="state"/>
+    <item type="id" name="light_name"/>
+    <item type="id" name="areas"/>
+    <item type="id" name="signal"/>
+    <item type="id" name="is_found"/>
+    
+    <!-- validate_dialog.xml -->
+    <item type="id" name="input_password"/>
+    <item type="id" name="input_name"/>
+    <item type="id" name="input_area"/>
+    <item type="id" name="bt_cancel"/>
+    <item type="id" name="bt_confirm"/>
+    
+    <!-- DragDropListActivity -->
+    <item type="id" name="draglistempty" />
+	<item type="id" name="draglist" />
+	<item type="id" name="frlDDListSign" />
+	
+	<!-- timer_layout.xml -->
+	<item type="id" name="save_timer"/>
+    
+</resources>

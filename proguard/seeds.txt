@@ -1,0 +1,501 @@
+android.support.v4.app.BackStackState
+android.support.v4.app.BackStackState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.Fragment$SavedState
+android.support.v4.app.Fragment$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentManagerState
+android.support.v4.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentState
+android.support.v4.app.FragmentState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentTabHost: void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener)
+android.support.v4.app.FragmentTabHost$SavedState
+android.support.v4.app.FragmentTabHost$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status[] values()
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColor(int)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColorResource(int)
+android.support.v4.view.PagerTabStrip: int getTabIndicatorColor()
+android.support.v4.view.PagerTabStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.PagerTabStrip: void setBackgroundColor(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundResource(int)
+android.support.v4.view.PagerTabStrip: void setDrawFullUnderline(boolean)
+android.support.v4.view.PagerTabStrip: boolean getDrawFullUnderline()
+android.support.v4.view.PagerTabStrip: int getMinHeight()
+android.support.v4.view.PagerTitleStrip: void setSingleLineAllCaps(android.widget.TextView)
+android.support.v4.view.PagerTitleStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTitleStrip: int getTextSpacing()
+android.support.v4.view.PagerTitleStrip: void setNonPrimaryAlpha(float)
+android.support.v4.view.PagerTitleStrip: void setTextColor(int)
+android.support.v4.view.PagerTitleStrip: void setGravity(int)
+android.support.v4.view.PagerTitleStrip: int getMinHeight()
+android.support.v4.view.ViewPager: void setScrollState(int)
+android.support.v4.view.ViewPager: void setAdapter(android.support.v4.view.PagerAdapter)
+android.support.v4.view.ViewPager: android.support.v4.view.PagerAdapter getAdapter()
+android.support.v4.view.ViewPager: void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener)
+android.support.v4.view.ViewPager: void setCurrentItem(int)
+android.support.v4.view.ViewPager: int getCurrentItem()
+android.support.v4.view.ViewPager: void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+android.support.v4.view.ViewPager: void setChildrenDrawingOrderEnabledCompat(boolean)
+android.support.v4.view.ViewPager: int getOffscreenPageLimit()
+android.support.v4.view.ViewPager: void setOffscreenPageLimit(int)
+android.support.v4.view.ViewPager: void setPageMargin(int)
+android.support.v4.view.ViewPager: int getPageMargin()
+android.support.v4.view.ViewPager: void setPageMarginDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.ViewPager: void setPageMarginDrawable(int)
+android.support.v4.view.ViewPager: void setScrollingCacheEnabled(boolean)
+android.support.v4.view.ViewPager$SavedState
+android.support.v4.view.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
+com.bde.light.activity.AdjustmentActivity
+com.bde.light.activity.AdjustmentActivity: AdjustmentActivity()
+com.bde.light.activity.AdjustmentActivity: void onClick(android.view.View)
+com.bde.light.activity.AreaActivity
+com.bde.light.activity.AreaActivity: AreaActivity()
+com.bde.light.activity.AreaActivity: void onClick(android.view.View)
+com.bde.light.activity.DeviceActivity
+com.bde.light.activity.DeviceActivity: DeviceActivity()
+com.bde.light.activity.DeviceActivity: void onClick(android.view.View)
+com.bde.light.activity.DeviceManagerActivity
+com.bde.light.activity.DeviceManagerActivity: DeviceManagerActivity()
+com.bde.light.activity.DeviceManagerActivity: void bt_back(android.view.View)
+com.bde.light.activity.EndInitActivity
+com.bde.light.activity.EndInitActivity: EndInitActivity()
+com.bde.light.activity.InitActivity
+com.bde.light.activity.InitActivity: InitActivity()
+com.bde.light.activity.InitPasswordActivity
+com.bde.light.activity.InitPasswordActivity: InitPasswordActivity()
+com.bde.light.activity.InitPasswordActivity: void confirm(android.view.View)
+com.bde.light.activity.InitPasswordActivity: void onClick(android.view.View)
+com.bde.light.activity.InitializeActivity
+com.bde.light.activity.InitializeActivity: InitializeActivity()
+com.bde.light.activity.LanguageActivity
+com.bde.light.activity.LanguageActivity: LanguageActivity()
+com.bde.light.activity.LanguageActivity: void onClick(android.view.View)
+com.bde.light.activity.LaunchActivity
+com.bde.light.activity.LaunchActivity: LaunchActivity()
+com.bde.light.activity.MainActivity
+com.bde.light.activity.MainActivity: MainActivity()
+com.bde.light.activity.MainActivity: void onClick(android.view.View)
+com.bde.light.activity.R$array: int control_array
+com.bde.light.activity.R$attr: int click_remove_id
+com.bde.light.activity.R$attr: int collapsed_height
+com.bde.light.activity.R$attr: int drag_enabled
+com.bde.light.activity.R$attr: int drag_handle_id
+com.bde.light.activity.R$attr: int drag_scroll_start
+com.bde.light.activity.R$attr: int drag_start_mode
+com.bde.light.activity.R$attr: int drop_animation_duration
+com.bde.light.activity.R$attr: int fling_handle_id
+com.bde.light.activity.R$attr: int float_alpha
+com.bde.light.activity.R$attr: int float_background_color
+com.bde.light.activity.R$attr: int max_drag_scroll_speed
+com.bde.light.activity.R$attr: int remove_animation_duration
+com.bde.light.activity.R$attr: int remove_enabled
+com.bde.light.activity.R$attr: int remove_mode
+com.bde.light.activity.R$attr: int slide_shuffle_speed
+com.bde.light.activity.R$attr: int sort_enabled
+com.bde.light.activity.R$attr: int track_drag_sort
+com.bde.light.activity.R$attr: int use_default_controller
+com.bde.light.activity.R$color: int black
+com.bde.light.activity.R$color: int blue
+com.bde.light.activity.R$color: int color_title
+com.bde.light.activity.R$color: int gray
+com.bde.light.activity.R$color: int mediumslateblue
+com.bde.light.activity.R$color: int sea_green
+com.bde.light.activity.R$color: int separator
+com.bde.light.activity.R$color: int silver
+com.bde.light.activity.R$color: int status_background
+com.bde.light.activity.R$color: int status_text
+com.bde.light.activity.R$color: int subtitle_background
+com.bde.light.activity.R$color: int subtitle_text
+com.bde.light.activity.R$color: int text_color
+com.bde.light.activity.R$color: int title_background
+com.bde.light.activity.R$color: int title_text
+com.bde.light.activity.R$color: int white
+com.bde.light.activity.R$dimen: int activity_horizontal_margin
+com.bde.light.activity.R$dimen: int activity_vertical_margin
+com.bde.light.activity.R$dimen: int expanded_height
+com.bde.light.activity.R$dimen: int normal_height
+com.bde.light.activity.R$drawable: int add_press
+com.bde.light.activity.R$drawable: int add_timer_btn
+com.bde.light.activity.R$drawable: int alph0
+com.bde.light.activity.R$drawable: int arrow_forward
+com.bde.light.activity.R$drawable: int back_btn
+com.bde.light.activity.R$drawable: int bc
+com.bde.light.activity.R$drawable: int bc_2
+com.bde.light.activity.R$drawable: int bc_3
+com.bde.light.activity.R$drawable: int bg2
+com.bde.light.activity.R$drawable: int bottombar
+com.bde.light.activity.R$drawable: int btn_style_six_normal
+com.bde.light.activity.R$drawable: int button_01
+com.bde.light.activity.R$drawable: int button_02
+com.bde.light.activity.R$drawable: int close
+com.bde.light.activity.R$drawable: int corner_bg
+com.bde.light.activity.R$drawable: int corner_textview
+com.bde.light.activity.R$drawable: int curtain
+com.bde.light.activity.R$drawable: int curtain_48
+com.bde.light.activity.R$drawable: int curtain_no_signal
+com.bde.light.activity.R$drawable: int delete_button
+com.bde.light.activity.R$drawable: int delete_press
+com.bde.light.activity.R$drawable: int down_btn
+com.bde.light.activity.R$drawable: int down_button_pressed
+com.bde.light.activity.R$drawable: int down_button_released
+com.bde.light.activity.R$drawable: int frame_no_check
+com.bde.light.activity.R$drawable: int frame_with_checked
+com.bde.light.activity.R$drawable: int fstat_sys_signal_0_fully
+com.bde.light.activity.R$drawable: int fstat_sys_signal_1_fully
+com.bde.light.activity.R$drawable: int fstat_sys_signal_2_fully
+com.bde.light.activity.R$drawable: int fstat_sys_signal_3_fully
+com.bde.light.activity.R$drawable: int fstat_sys_signal_4_fully
+com.bde.light.activity.R$drawable: int grid_select
+com.bde.light.activity.R$drawable: int grid_view01
+com.bde.light.activity.R$drawable: int grid_view02
+com.bde.light.activity.R$drawable: int grid_view03
+com.bde.light.activity.R$drawable: int grid_view04
+com.bde.light.activity.R$drawable: int ic_indicator_off
+com.bde.light.activity.R$drawable: int ic_indicator_on
+com.bde.light.activity.R$drawable: int ic_launcher
+com.bde.light.activity.R$drawable: int icon
+com.bde.light.activity.R$drawable: int icon_add01
+com.bde.light.activity.R$drawable: int icon_add02
+com.bde.light.activity.R$drawable: int icon_areas
+com.bde.light.activity.R$drawable: int icon_arrow
+com.bde.light.activity.R$drawable: int icon_delete01
+com.bde.light.activity.R$drawable: int icon_delete02
+com.bde.light.activity.R$drawable: int icon_down
+com.bde.light.activity.R$drawable: int icon_light01
+com.bde.light.activity.R$drawable: int icon_light02
+com.bde.light.activity.R$drawable: int icon_lock01
+com.bde.light.activity.R$drawable: int icon_lock02
+com.bde.light.activity.R$drawable: int icon_lock_orange
+com.bde.light.activity.R$drawable: int icon_selected
+com.bde.light.activity.R$drawable: int icon_up
+com.bde.light.activity.R$drawable: int lan_genius_logo
+com.bde.light.activity.R$drawable: int layout_bg
+com.bde.light.activity.R$drawable: int light_off
+com.bde.light.activity.R$drawable: int light_on
+com.bde.light.activity.R$drawable: int mada2
+com.bde.light.activity.R$drawable: int new_transition
+com.bde.light.activity.R$drawable: int no_signal
+com.bde.light.activity.R$drawable: int smart_home690
+com.bde.light.activity.R$drawable: int sort
+com.bde.light.activity.R$drawable: int sort_btn01
+com.bde.light.activity.R$drawable: int sort_btn02
+com.bde.light.activity.R$drawable: int split_1
+com.bde.light.activity.R$drawable: int split_left_1
+com.bde.light.activity.R$drawable: int split_right_1
+com.bde.light.activity.R$drawable: int stat_sys_signal_0_fully
+com.bde.light.activity.R$drawable: int stat_sys_signal_1_fully
+com.bde.light.activity.R$drawable: int stat_sys_signal_2_fully
+com.bde.light.activity.R$drawable: int stat_sys_signal_3_fully
+com.bde.light.activity.R$drawable: int stat_sys_signal_4_fully
+com.bde.light.activity.R$drawable: int switch_off_0
+com.bde.light.activity.R$drawable: int switch_on_0
+com.bde.light.activity.R$drawable: int timer_gray
+com.bde.light.activity.R$drawable: int title_selector
+com.bde.light.activity.R$drawable: int topbar
+com.bde.light.activity.R$drawable: int up_btn
+com.bde.light.activity.R$drawable: int up_button_pressed
+com.bde.light.activity.R$drawable: int up_button_released
+com.bde.light.activity.R$drawable: int weixi_logo_114_114
+com.bde.light.activity.R$drawable: int weixilogo_57_57
+com.bde.light.activity.R$drawable: int wenhao_2
+com.bde.light.activity.R$drawable: int wheel_bg
+com.bde.light.activity.R$drawable: int wheel_val
+com.bde.light.activity.R$id: int ProgressBar
+com.bde.light.activity.R$id: int action_settings
+com.bde.light.activity.R$id: int add_area
+com.bde.light.activity.R$id: int add_timer
+com.bde.light.activity.R$id: int adjustMentBtns
+com.bde.light.activity.R$id: int adjustment
+com.bde.light.activity.R$id: int adjustmentNum
+com.bde.light.activity.R$id: int area_name
+com.bde.light.activity.R$id: int arealist
+com.bde.light.activity.R$id: int areas
+com.bde.light.activity.R$id: int arrows
+com.bde.light.activity.R$id: int brightness
+com.bde.light.activity.R$id: int brightnessBtn
+com.bde.light.activity.R$id: int brightnessLayout
+com.bde.light.activity.R$id: int bt_back
+com.bde.light.activity.R$id: int bt_cancel
+com.bde.light.activity.R$id: int bt_confirm
+com.bde.light.activity.R$id: int btn_delete
+com.bde.light.activity.R$id: int cancle
+com.bde.light.activity.R$id: int cancleButton
+com.bde.light.activity.R$id: int clickRemove
+com.bde.light.activity.R$id: int close
+com.bde.light.activity.R$id: int close_check
+com.bde.light.activity.R$id: int close_tv
+com.bde.light.activity.R$id: int confirm
+com.bde.light.activity.R$id: int control_light
+com.bde.light.activity.R$id: int control_name
+com.bde.light.activity.R$id: int delete_area
+com.bde.light.activity.R$id: int device_list
+com.bde.light.activity.R$id: int devices_list
+com.bde.light.activity.R$id: int dialogLayout
+com.bde.light.activity.R$id: int dialog_title
+com.bde.light.activity.R$id: int down
+com.bde.light.activity.R$id: int draglist
+com.bde.light.activity.R$id: int draglistempty
+com.bde.light.activity.R$id: int endAdjustment
+com.bde.light.activity.R$id: int flingRemove
+com.bde.light.activity.R$id: int fragment_container
+com.bde.light.activity.R$id: int frlDDListSign
+com.bde.light.activity.R$id: int grid_icon
+com.bde.light.activity.R$id: int grid_title
+com.bde.light.activity.R$id: int grid_view
+com.bde.light.activity.R$id: int include1
+com.bde.light.activity.R$id: int information
+com.bde.light.activity.R$id: int init_password
+com.bde.light.activity.R$id: int input_area
+com.bde.light.activity.R$id: int input_name
+com.bde.light.activity.R$id: int input_password
+com.bde.light.activity.R$id: int is_found
+com.bde.light.activity.R$id: int item_area
+com.bde.light.activity.R$id: int item_selected
+com.bde.light.activity.R$id: int language
+com.bde.light.activity.R$id: int light_name
+com.bde.light.activity.R$id: int list
+com.bde.light.activity.R$id: int list_control
+com.bde.light.activity.R$id: int name
+com.bde.light.activity.R$id: int new_password
+com.bde.light.activity.R$id: int no_device
+com.bde.light.activity.R$id: int no_timer
+com.bde.light.activity.R$id: int old_password
+com.bde.light.activity.R$id: int onDown
+com.bde.light.activity.R$id: int onLongPress
+com.bde.light.activity.R$id: int onMove
+com.bde.light.activity.R$id: int open
+com.bde.light.activity.R$id: int open_check
+com.bde.light.activity.R$id: int open_tv
+com.bde.light.activity.R$id: int operation
+com.bde.light.activity.R$id: int progressText
+com.bde.light.activity.R$id: int rangBtn
+com.bde.light.activity.R$id: int rangNum
+com.bde.light.activity.R$id: int range
+com.bde.light.activity.R$id: int relativeLayout1
+com.bde.light.activity.R$id: int repeat_password
+com.bde.light.activity.R$id: int save_timer
+com.bde.light.activity.R$id: int select_device
+com.bde.light.activity.R$id: int selected
+com.bde.light.activity.R$id: int setAdjustment
+com.bde.light.activity.R$id: int setting_option
+com.bde.light.activity.R$id: int signal
+com.bde.light.activity.R$id: int signalLayout
+com.bde.light.activity.R$id: int sort_btn
+com.bde.light.activity.R$id: int splitbutton
+com.bde.light.activity.R$id: int start
+com.bde.light.activity.R$id: int state
+com.bde.light.activity.R$id: int time
+com.bde.light.activity.R$id: int timepicker
+com.bde.light.activity.R$id: int timerIcon
+com.bde.light.activity.R$id: int timer_gray
+com.bde.light.activity.R$id: int timer_layout
+com.bde.light.activity.R$id: int title
+com.bde.light.activity.R$id: int title_layout
+com.bde.light.activity.R$id: int top_title
+com.bde.light.activity.R$id: int up
+com.bde.light.activity.R$id: int update_name_text
+com.bde.light.activity.R$id: int update_option
+com.bde.light.activity.R$id: int windowBtn
+com.bde.light.activity.R$layout: int activity_main
+com.bde.light.activity.R$layout: int adjustment_layout
+com.bde.light.activity.R$layout: int area_activity
+com.bde.light.activity.R$layout: int base_layout
+com.bde.light.activity.R$layout: int brightness_control
+com.bde.light.activity.R$layout: int device_activity
+com.bde.light.activity.R$layout: int device_manager_activity
+com.bde.light.activity.R$layout: int end_init_fragment_layout
+com.bde.light.activity.R$layout: int enter_init_fragment_layout
+com.bde.light.activity.R$layout: int init_password_activity
+com.bde.light.activity.R$layout: int init_window_layout
+com.bde.light.activity.R$layout: int input_name
+com.bde.light.activity.R$layout: int item_add_timer_device_list
+com.bde.light.activity.R$layout: int item_area_layout
+com.bde.light.activity.R$layout: int item_device_control
+com.bde.light.activity.R$layout: int item_device_list
+com.bde.light.activity.R$layout: int item_grid_view
+com.bde.light.activity.R$layout: int item_language_layout
+com.bde.light.activity.R$layout: int item_setting_layout
+com.bde.light.activity.R$layout: int item_timer_list
+com.bde.light.activity.R$layout: int item_update_area_list
+com.bde.light.activity.R$layout: int item_update_setting
+com.bde.light.activity.R$layout: int language_activity
+com.bde.light.activity.R$layout: int launch_activity
+com.bde.light.activity.R$layout: int progress_bar
+com.bde.light.activity.R$layout: int setting_activity
+com.bde.light.activity.R$layout: int start_init_fragment_layout
+com.bde.light.activity.R$layout: int sub_layout
+com.bde.light.activity.R$layout: int time_layout
+com.bde.light.activity.R$layout: int timer_activity
+com.bde.light.activity.R$layout: int update_area_activity
+com.bde.light.activity.R$layout: int update_name_activity
+com.bde.light.activity.R$layout: int update_password_activity
+com.bde.light.activity.R$layout: int vallidate_dialog_old
+com.bde.light.activity.R$layout: int vallidate_dialog_with_spinner
+com.bde.light.activity.R$layout: int window_control
+com.bde.light.activity.R$menu: int main
+com.bde.light.activity.R$string: int action
+com.bde.light.activity.R$string: int action_settings
+com.bde.light.activity.R$string: int add
+com.bde.light.activity.R$string: int add_success
+com.bde.light.activity.R$string: int adjustmentAndRange
+com.bde.light.activity.R$string: int adjustmentTime
+com.bde.light.activity.R$string: int adjustments
+com.bde.light.activity.R$string: int all
+com.bde.light.activity.R$string: int all_off
+com.bde.light.activity.R$string: int all_on
+com.bde.light.activity.R$string: int app_name
+com.bde.light.activity.R$string: int area
+com.bde.light.activity.R$string: int areaExsit
+com.bde.light.activity.R$string: int area_management
+com.bde.light.activity.R$string: int area_manager
+com.bde.light.activity.R$string: int brightnessControl
+com.bde.light.activity.R$string: int cancel
+com.bde.light.activity.R$string: int change_range
+com.bde.light.activity.R$string: int chinese
+com.bde.light.activity.R$string: int choose_device
+com.bde.light.activity.R$string: int click
+com.bde.light.activity.R$string: int close
+com.bde.light.activity.R$string: int confirm
+com.bde.light.activity.R$string: int confirm_end
+com.bde.light.activity.R$string: int confirm_start
+com.bde.light.activity.R$string: int control_light
+com.bde.light.activity.R$string: int dbFail
+com.bde.light.activity.R$string: int delete
+com.bde.light.activity.R$string: int delete_failed
+com.bde.light.activity.R$string: int delete_or_not
+com.bde.light.activity.R$string: int delete_success
+com.bde.light.activity.R$string: int device_management
+com.bde.light.activity.R$string: int device_manager
+com.bde.light.activity.R$string: int down
+com.bde.light.activity.R$string: int endAdjustments
+com.bde.light.activity.R$string: int end_info
+com.bde.light.activity.R$string: int english
+com.bde.light.activity.R$string: int enter_info
+com.bde.light.activity.R$string: int failed
+com.bde.light.activity.R$string: int home
+com.bde.light.activity.R$string: int how_to_add_area
+com.bde.light.activity.R$string: int initPwdFail
+com.bde.light.activity.R$string: int init_failed
+com.bde.light.activity.R$string: int init_password
+com.bde.light.activity.R$string: int init_success
+com.bde.light.activity.R$string: int initialize
+com.bde.light.activity.R$string: int input_area
+com.bde.light.activity.R$string: int input_password
+com.bde.light.activity.R$string: int invalid_area
+com.bde.light.activity.R$string: int invalidate_oldpwd
+com.bde.light.activity.R$string: int invalidate_pwd
+com.bde.light.activity.R$string: int language_management
+com.bde.light.activity.R$string: int language_manager
+com.bde.light.activity.R$string: int menu
+com.bde.light.activity.R$string: int name
+com.bde.light.activity.R$string: int name_tip
+com.bde.light.activity.R$string: int new_password
+com.bde.light.activity.R$string: int no_area
+com.bde.light.activity.R$string: int no_device
+com.bde.light.activity.R$string: int no_timer
+com.bde.light.activity.R$string: int old_password
+com.bde.light.activity.R$string: int on_off_success
+com.bde.light.activity.R$string: int open
+com.bde.light.activity.R$string: int operating
+com.bde.light.activity.R$string: int operationNotSupport
+com.bde.light.activity.R$string: int over_time
+com.bde.light.activity.R$string: int password
+com.bde.light.activity.R$string: int password_empty
+com.bde.light.activity.R$string: int pleaseWait
+com.bde.light.activity.R$string: int range
+com.bde.light.activity.R$string: int repeat_password
+com.bde.light.activity.R$string: int save
+com.bde.light.activity.R$string: int setting
+com.bde.light.activity.R$string: int start_info
+com.bde.light.activity.R$string: int start_init
+com.bde.light.activity.R$string: int success
+com.bde.light.activity.R$string: int timeout
+com.bde.light.activity.R$string: int timer
+com.bde.light.activity.R$string: int tip
+com.bde.light.activity.R$string: int title
+com.bde.light.activity.R$string: int up
+com.bde.light.activity.R$string: int update_area
+com.bde.light.activity.R$string: int update_failed
+com.bde.light.activity.R$string: int update_name
+com.bde.light.activity.R$string: int update_password
+com.bde.light.activity.R$string: int update_success
+com.bde.light.activity.R$string: int validate_failed
+com.bde.light.activity.R$string: int validate_success
+com.bde.light.activity.R$string: int version_not_equal
+com.bde.light.activity.R$string: int warrningMessage
+com.bde.light.activity.R$string: int warrningTitle
+com.bde.light.activity.R$string: int windowControl
+com.bde.light.activity.R$style: int AppBaseTheme
+com.bde.light.activity.R$style: int AppTheme
+com.bde.light.activity.R$styleable: int[] DragSortListView
+com.bde.light.activity.R$styleable: int DragSortListView_click_remove_id
+com.bde.light.activity.R$styleable: int DragSortListView_collapsed_height
+com.bde.light.activity.R$styleable: int DragSortListView_drag_enabled
+com.bde.light.activity.R$styleable: int DragSortListView_drag_handle_id
+com.bde.light.activity.R$styleable: int DragSortListView_drag_scroll_start
+com.bde.light.activity.R$styleable: int DragSortListView_drag_start_mode
+com.bde.light.activity.R$styleable: int DragSortListView_drop_animation_duration
+com.bde.light.activity.R$styleable: int DragSortListView_fling_handle_id
+com.bde.light.activity.R$styleable: int DragSortListView_float_alpha
+com.bde.light.activity.R$styleable: int DragSortListView_float_background_color
+com.bde.light.activity.R$styleable: int DragSortListView_max_drag_scroll_speed
+com.bde.light.activity.R$styleable: int DragSortListView_remove_animation_duration
+com.bde.light.activity.R$styleable: int DragSortListView_remove_enabled
+com.bde.light.activity.R$styleable: int DragSortListView_remove_mode
+com.bde.light.activity.R$styleable: int DragSortListView_slide_shuffle_speed
+com.bde.light.activity.R$styleable: int DragSortListView_sort_enabled
+com.bde.light.activity.R$styleable: int DragSortListView_track_drag_sort
+com.bde.light.activity.R$styleable: int DragSortListView_use_default_controller
+com.bde.light.activity.SettingActivity
+com.bde.light.activity.SettingActivity: SettingActivity()
+com.bde.light.activity.SettingActivity: void onClick(android.view.View)
+com.bde.light.activity.StartInitActivity
+com.bde.light.activity.StartInitActivity: StartInitActivity()
+com.bde.light.activity.TimerActivity
+com.bde.light.activity.TimerActivity: TimerActivity()
+com.bde.light.activity.TimerActivity: void onClick(android.view.View)
+com.bde.light.activity.TimerDialogActivity
+com.bde.light.activity.TimerDialogActivity: TimerDialogActivity()
+com.bde.light.activity.UpdateAreaActivity
+com.bde.light.activity.UpdateAreaActivity: UpdateAreaActivity()
+com.bde.light.activity.UpdateAreaActivity: void onClick(android.view.View)
+com.bde.light.activity.UpdateNameActivity
+com.bde.light.activity.UpdateNameActivity: UpdateNameActivity()
+com.bde.light.activity.UpdateNameActivity: void confirm(android.view.View)
+com.bde.light.activity.UpdateNameActivity: void onClick(android.view.View)
+com.bde.light.activity.UpdatePasswordActivity
+com.bde.light.activity.UpdatePasswordActivity: UpdatePasswordActivity()
+com.bde.light.activity.UpdatePasswordActivity: void confirm(android.view.View)
+com.bde.light.activity.UpdatePasswordActivity: void onClick(android.view.View)
+com.bde.light.activity.ValidateActivity
+com.bde.light.activity.ValidateActivity: ValidateActivity()
+com.bde.light.activity.ValidateActivity: void onClick(android.view.View)
+com.bde.light.activity.ValidateActivity_old: void onClick(android.view.View)
+com.bde.light.myview.DragDropListView: void setDragListener(com.bde.light.myview.DragDropListView$DragListener)
+com.bde.light.myview.DragDropListView: void setDropListener(com.bde.light.myview.DragDropListView$DropListener)
+com.bde.light.myview.DragDropListView: void setRemoveListener(com.bde.light.myview.DragDropListView$RemoveListener)
+com.bde.light.myview.DragSortItemView: void setGravity(int)
+com.bde.light.myview.DragSortItemView: int getGravity()
+com.bde.light.myview.DragSortItemViewCheckable: void setChecked(boolean)
+com.bde.light.myview.DragSortListView
+com.bde.light.myview.DragSortListView: DragSortListView(android.content.Context,android.util.AttributeSet)
+com.bde.light.myview.DragSortListView: void setFloatAlpha(float)
+com.bde.light.myview.DragSortListView: float getFloatAlpha()
+com.bde.light.myview.DragSortListView: void setMaxScrollSpeed(float)
+com.bde.light.myview.DragSortListView: void setAdapter(android.widget.ListAdapter)
+com.bde.light.myview.DragSortListView: android.widget.ListAdapter getInputAdapter()
+com.bde.light.myview.DragSortListView: void setDragScrollStart(float)
+com.bde.light.myview.DragSortListView: void setFloatViewManager(com.bde.light.myview.DragSortListView$FloatViewManager)
+com.bde.light.myview.DragSortListView: void setDragListener(com.bde.light.myview.DragSortListView$DragListener)
+com.bde.light.myview.DragSortListView: void setDragEnabled(boolean)
+com.bde.light.myview.DragSortListView: void setDropListener(com.bde.light.myview.DragSortListView$DropListener)
+com.bde.light.myview.DragSortListView: void setRemoveListener(com.bde.light.myview.DragSortListView$RemoveListener)
+com.bde.light.myview.DragSortListView: void setDragSortListener(com.bde.light.myview.DragSortListView$DragSortListener)
+com.bde.light.myview.DragSortListView: void setDragScrollProfile(com.bde.light.myview.DragSortListView$DragScrollProfile)
+com.bde.light.service.BleService
+com.bde.light.service.BleService: BleService()
+com.util.SlipButton
+com.util.SlipButton: SlipButton(android.content.Context)
+com.util.SlipButton: SlipButton(android.content.Context,android.util.AttributeSet)
+com.util.SlipButton: SlipButton(android.content.Context,android.util.AttributeSet,int)
+com.util.SlipButton: void setCheck(boolean)

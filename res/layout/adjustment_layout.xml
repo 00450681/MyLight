@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/sub_layout" />
+    <!--
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textColor="#000000"
+        android:text="@string/adjustmentTime" />
+    <SeekBar
+        android:id="@+id/adjustment"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:max="900" />
+
+    <LinearLayout
+        android:id="@+id/adjustMentBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adjustment"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/open" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/close" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/endAdjustment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adjustMentBtns"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:text="@string/endAdjustments" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/adjustment"
+        android:layout_toLeftOf="@+id/adjustment"
+        android:textColor="#000000"
+        android:text="10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/adjustment"
+        android:layout_toRightOf="@+id/adjustment"
+        android:text="1000"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+    -->
+
+    <RelativeLayout
+        android:id="@+id/setAdjustment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/corner_textview"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/adjustment"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:max="990" />
+
+        <LinearLayout
+            android:id="@+id/adjustMentBtns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adjustment"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/open"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/open" />
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/close" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/endAdjustment"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adjustMentBtns"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="0dp"
+            android:text="@string/endAdjustments" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/adjustment"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/adjustment"
+            android:text="10ms"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/adjustment"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/adjustment"
+            android:text="1s"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adjustment"
+            android:layout_centerHorizontal="true"
+            android:text="@string/adjustmentTime"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/adjustments"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/adjustmentNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setAdjustment"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/corner_textview"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/range"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/range"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:max="59000"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="70dp"
+            android:layout_toLeftOf="@+id/range"
+            android:text="1s"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/range"
+            android:text="60s"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rangNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:layout_marginTop="40dp"
+            android:textSize="20sp" />
+        <Button
+                android:id="@+id/rangBtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/range"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="@string/change_range" />
+    </RelativeLayout>
+
+</RelativeLayout>

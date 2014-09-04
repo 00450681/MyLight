@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical" >
+
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+     >
+    
+    <include layout="@layout/sub_layout"/>
+    
+    <com.bde.light.myview.DragSortListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_textview"
+        android:dividerHeight="1dp" >
+    </com.bde.light.myview.DragSortListView>
+    
+    <TextView
+        android:id="@+id/no_timer"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/corner_textview"
+        android:gravity="center"
+        android:text="@string/no_timer"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+
+	</LinearLayout>
+
+    <Button
+        android:id="@id/add_timer"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/add_timer_btn"
+        android:text="@string/add"
+        android:textColor="@color/white" />
+
+    
+
+</RelativeLayout>

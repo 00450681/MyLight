@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="control_array">
+        <item>RemoteControl</item>
+        <item>CloseSwitch</item>
+        <item>ShakeSwitch</item>
+        <item>Timer</item>
+        <item>Fingerprint</item>
+        <item>Retina</item>
+        <item>Face</item>
+        <item>Voice</item>
+    </string-array>
+</resources>
